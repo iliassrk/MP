@@ -1,0 +1,44 @@
+.container{
+  background: var(--var-bg-transparent-color);
+  z-index: 99;
+  position: relative;
+
+  .logo{
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+  }
+
+  .navbar-menu{
+
+    .menu-nav {
+      margin:  20px 30px;
+
+      .menu-item{
+        color: var(--var-white-text-color);
+        margin:  0px 10px;
+        padding: 20px;
+        border-bottom: 5px solid var(--var-bg-transparent-color);
+      }
+
+      .menu-item:hover {
+        border-bottom: 5px solid var(--var-bg-cyan-blue-color);
+        cursor: pointer;
+      }
+    }
+
+    .devis-btn{
+      color: var(--var-white-text-color);
+      background: var(--var-bg-dark-blue-color);
+      padding:  20px 40px;
+    }
+
+    .search-section {
+      .pi-search{
+        color: var(--var-bg-gradient-blue-color);
+        font-size: 2rem;
+      }
+    }
+  }
+
+}

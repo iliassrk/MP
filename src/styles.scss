@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "primeicons/primeicons.css";
+
+:root{
+  /*text-colors */
+  --var-white-text-color: #FFF;
+  --var-dark-blue-text-color: #08222F;
+  --var-cyan-text-color: #15AFE2;
+
+  /* background-colors */
+  --var-bg-transparent-color: transparent;
+  --var-bg-dark-blue-color: #005D9E;
+  --var-bg-cyan-blue-color: #009CED;
+  --var-bg-white-color: #FFF;
+
+  /* background-gradient-colors */
+  --var-bg-gradient-blue-color: linear-gradient(215deg, rgba(25,76,129,1) 33%, rgba(0,156,237,1) 63%);
+  --var-bg-gradient-green-color: linear-gradient(215deg, rgba(25,76,129,1) 0%, rgba(0,225,184,1) 100%);
+}
+
+.container{
+  padding: 0 100px;
+}
+
+.inline-content{
+  display: inline-block;
+}
+
+*{
+  font-family:  'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+.btn{
+  padding: 20px 40px;
+  border: none;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.btn:after{
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  left:0;
+  border: 10px solid transparent;
+  border-bottom-color: white;
+  border-left-color: white;
+  content: "";
+}
+
+.text-light{
+  font-weight: 300;
+}
+
+.text-bold{
+  font-weight: 700;
+}
+
+
+.mper-header{
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 50px;
+  font-weight: 900;
+
+  .pi{
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .light-title{
+    color: var(--var-cyan-text-color);
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .dark-title{
+    color: var(--var-dark-blue-text-color);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
+
+.mper-sub-header{
+  text-align: center;
+  margin-bottom: 50px;
+  h4{
+    color: var(--var-dark-blue-text-color);
+    font-size: 22px;
+  }
+}
+
+
+.dark-blue-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 65, 103, 0.76);
+  text-align: center;
+  color: var(--var-white-text-color);
+}
+
