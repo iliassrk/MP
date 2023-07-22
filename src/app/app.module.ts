@@ -12,6 +12,7 @@ import {DividerModule} from "primeng/divider";
 import {NgOptimizedImage} from "@angular/common";
 import {FlexModule} from "@angular/flex-layout";
 import {CarouselModule} from "primeng/carousel";
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {CarouselModule} from "primeng/carousel";
     DividerModule,
     NgOptimizedImage,
     FlexModule,
-    CarouselModule
+    CarouselModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
