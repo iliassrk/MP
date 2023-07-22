@@ -4,7 +4,7 @@
   background: url("https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg") center no-repeat;
   background-size: cover;
   position: relative;
-  top: -200px;
+  top: -150px;
   z-index: 1;
 
   .carousel-overlay {
@@ -372,6 +372,7 @@
     background: var(--var--blue-text-color);
     color: var(--var-white-text-color);
     padding: 30px;
+    margin: 20px;
 
     .newsletter-title {
       font-size: 26px;
@@ -414,7 +415,7 @@
         background: var(--var--blue-text-color);
         color: var(--var-white-text-color);
         padding: 10px;
-        height: 52px;
+        height: 50px;
         border: none;
         border-bottom: 1px solid var(--var-bg-white-color);
       }

@@ -44,19 +44,6 @@
   overflow: hidden;
 }
 
-/*
-.btn:after{
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  width: 0;
-  left:0;
-  border: 10px solid transparent;
-  border-bottom-color: white;
-  border-left-color: white;
-  content: "";
-}*/
-
 .btn::before {
   content: "";
   position: absolute;

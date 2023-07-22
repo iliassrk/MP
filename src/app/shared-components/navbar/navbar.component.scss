@@ -2,7 +2,10 @@
   background: var(--var-bg-transparent-color);
   z-index: 99;
   padding: 0 5%;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   .logo{
     width: 100%;
@@ -11,8 +14,70 @@
   }
 
   .navbar-menu{
+    position: relative;
+
     *{
       display: inline-block;
+    }
+
+    .navbar-toggler{
+      background: var(--var-bg-transparent-color);
+      border: 1px solid var(--var-bg-white-color);
+      padding: 20px;
+
+      .pi{
+        color: var(--var-white-text-color);
+        font-size: 18px;
+      }
+    }
+
+    .nav-sm{
+
+      *{
+        display: block;
+      }
+
+      background: rgba(8, 34, 47, 0.90);
+      width: 400px;
+      border-radius: 5px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 5px;
+      margin: 0;
+      text-align: center;
+
+      .menu-item{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        color: var(--var-white-text-color);
+        border-bottom: 5px solid var(--var-bg-transparent-color);
+
+        .pi{
+          color: var(--var-white-text-color);
+        }
+      }
+
+      .menu-item:hover {
+        border-bottom: 3px solid var(--var-bg-cyan-blue-color);
+        cursor: pointer;
+      }
+
+      .devis-btn{
+        color: var(--var-white-text-color);
+        background: var(--var-bg-dark-blue-color);
+        padding:  15px 30px;
+        display: inline-block;
+      }
+
+      .search-section {
+        .pi-search{
+          color: var(--var-bg-gradient-blue-color);
+          font-size: 1rem;
+        }
+      }
+
     }
 
     .menu-nav {
@@ -29,18 +94,18 @@
         border-bottom: 5px solid var(--var-bg-cyan-blue-color);
         cursor: pointer;
       }
-    }
 
-    .devis-btn{
-      color: var(--var-white-text-color);
-      background: var(--var-bg-dark-blue-color);
-      padding:  20px 40px;
-    }
+      .devis-btn{
+        color: var(--var-white-text-color);
+        background: var(--var-bg-dark-blue-color);
+        padding:  15px 30px;
+      }
 
-    .search-section {
-      .pi-search{
-        color: var(--var-bg-gradient-blue-color);
-        font-size: 2rem;
+      .search-section {
+        .pi-search{
+          color: var(--var-bg-gradient-blue-color);
+          font-size: 2rem;
+        }
       }
     }
   }

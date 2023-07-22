@@ -1,25 +1,55 @@
 <div class="menu-container">
   <div class="row justify-content-between">
-    <div class="col-2">
+    <div class="col-2 align-self-center">
       <img class="logo inline-content" src="./assets/img/logo.png" alt="logo">
     </div>
-    <div class="col-9">
+    <div class="col-9 align-self-center" style="text-align: right">
       <div class="navbar-menu inline-content">
-        <ul class="menu-nav inline-content">
-          <li class="menu-item inline-content text-bold">Accueil</li>
-          <li class="menu-item inline-content text-bold">Société</li>
-          <li class="menu-item inline-content text-bold">Secteurs d'activités</li>
-          <li class="menu-item inline-content text-bold">Parc-machines</li>
-          <li class="menu-item inline-content text-bold">Contact</li>
-        </ul>
-          <p-divider class="inline-content" layout="vertical"></p-divider>
-          <button class="btn devis-btn text-bold">
-            DEMANDER UN DEVIS
-          </button>
-          <p-divider class="inline-content" layout="vertical"></p-divider>
-          <div class="search-section inline-content">
-            <i class="pi pi-search"></i>
+        <button class="navbar-toggler d-lg-none d-md-inline" (click)="clickToggleNav()" type="button">
+          <i class="pi pi-bars"></i>
+        </button>
+        <ng-template [ngIf]="toggleNav">
+          <div class="nav-sm">
+            <div class="navbar-nav">
+              <li class="menu-item text-bold">Accueil</li>
+              <li class="menu-item text-bold">Société</li>
+              <li class="menu-item text-bold">Secteurs d'activités</li>
+              <li class="menu-item text-bold">Parc-machines</li>
+              <li class="menu-item text-bold">Contact</li>
+              <li class="menu-item">
+                <button class="btn devis-btn text-bold">
+                  DEMANDER UN DEVIS
+                </button>
+              </li>
+              <li class="menu-item text-bold">
+                <div class="search-section inline-content">
+                  <i class="pi pi-search"></i> Search
+                </div>
+              </li>
+            </div>
           </div>
+        </ng-template>
+        <div class="collapse navbar-collapse menu-nav d-md-none d-lg-inline">
+          <div class="navbar-nav">
+            <li class="menu-item d-inline text-bold">Accueil</li>
+            <li class="menu-item d-inline text-bold">Société</li>
+            <li class="menu-item d-inline text-bold">Secteurs d'activités</li>
+            <li class="menu-item d-inline text-bold">Parc-machines</li>
+            <li class="menu-item d-inline text-bold">Contact</li>
+            <li class="">
+              <p-divider class="inline-content" layout="vertical"></p-divider>
+              <button class="btn devis-btn text-bold">
+                DEMANDER UN DEVIS
+              </button>
+            </li>
+            <li class="d-inline text-bold">
+              <p-divider class="inline-content" layout="vertical"></p-divider>
+              <div class="search-section inline-content">
+                <i class="pi pi-search"></i>
+              </div>
+            </li>
+          </div>
+        </div>
       </div>
     </div>
   </div>
