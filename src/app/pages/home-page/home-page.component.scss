@@ -1,7 +1,7 @@
 .carousel-section {
   width: 100%;
   height: 1050px;
-  background: url("https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg") center no-repeat;
+  background: url("../../../assets/images/SLIDER/slider2.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   top: -150px;
@@ -10,7 +10,7 @@
   .carousel-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 93, 158, 0.28);
+    background: rgba(2, 78, 134, 0.34);
     text-align: center;
     color: var(--var-white-text-color);
 
@@ -106,35 +106,6 @@
 .usinage-section {
   margin: 120px 0;
 
-  .flower-images {
-    height: 650px;
-    width: 100%;
-
-    .img-top-left {
-      background: var(--var-bg-dark-blue-color);
-      border-top-left-radius: 30%;
-      height: 240px;
-    }
-
-    .img-top-right {
-      background: var(--var-bg-dark-blue-color);
-      border-top-right-radius: 30%;
-      height: 300px;
-    }
-
-    .img-bottom-left {
-      background: var(--var-bg-dark-blue-color);
-      border-bottom-left-radius: 30%;
-      height: 300px;
-    }
-
-    .img-bottom-right {
-      background: var(--var-bg-dark-blue-color);
-      border-bottom-right-radius: 30%;
-      height: 240px;
-    }
-  }
-
   .description {
     padding: 80px 0 80px 80px;
     margin: auto;
@@ -166,93 +137,63 @@
   }
 
   .activity-card {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    z-index: 99;
     margin: auto;
     color: var(--var-white-text-color);
 
-    .dark-blue-overlay {
-      padding-top: 100px;
-      border: 5px solid var(--var-bg-transparent-color);
-      z-index: 99;
-
-      .discover-activity {
-        background: var(--var-bg-gradient-blue-color);
-        color: var(--var-white-text-color);
-        width: 150px;
-        font-size: 14px;
-        display: none;
-        padding: 10px;
-        position: absolute;
-        text-transform: uppercase;
-        top: 20px;
-        right: -20px;
-
-        .pi {
-          display: inline-block;
-          font-size: 11px;
-          padding: 0;
-          width: 20px;
-          margin: auto;
-          margin-bottom: 0;
-          border: none;
-        }
-      }
+    .discover-activity {
+      background: var(--var-bg-gradient-blue-color);
+      color: var(--var-white-text-color);
+      width: 150px;
+      font-size: 14px;
+      display: none;
+      padding: 10px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 40px;
+      right: 10px;
 
       .pi {
-        display: block;
-        font-size: 60px;
-        padding: 20px;
-        width: 100px;
-        margin: auto;
-        z-index: 2;
-        margin-bottom: 30px;
-        border: 1px solid var(--var-bg-white-color);
-        border-top-right-radius: 25%;
-        border-bottom-left-radius: 25%;
-      }
-
-      .activity-card-title {
-        display: block;
-        z-index: 2;
-        font-size: 26px;
-      }
-    }
-
-    .dark-blue-overlay:hover {
-      border: 5px solid var(--var-bg-dark-blue-color);
-      transition-timing-function: ease-in;
-      transition-duration: 500ms;
-
-      .discover-activity {
         display: inline-block;
+        font-size: 11px;
+        padding: 0;
+        width: 20px;
+        margin: auto;
+        margin-bottom: 0;
+        border: none;
       }
-
     }
+
   }
 
-  .automobile-card {
-    background: url("../../../assets/img/home-page.png");
-    background-size: cover;
-    position: relative;
+  .activity-card:hover {
+    border: 5px solid var(--var-bg-dark-blue-color);
+
+    .discover-activity {
+      display: inline-block;
+    }
+
   }
 
   .activity-summary {
-    margin-top: 50px;
 
     * {
       display: inline-block;
     }
 
-    .plan-icon {
-      font-size: 44px;
-      color: var(--var-cyan-text-color);
+    .activity-logo {
+      width: 50px;
+      height: 50px;
       margin: 0 30px;
     }
 
     .activity-summary-text {
       color: var(--var-dark-blue-text-color);
+      position: relative;
+      top: 10px;
       font-weight: 300;
       text-decoration: underline;
     }
@@ -268,14 +209,24 @@
 
 .engagement-section {
   margin-bottom: 150px;
+  text-align: center;
 
   .engagement-card {
     width: 250px;
     height: 250px;
+    position: relative;
+    margin: 0 auto 100px auto;
+
+    .img-border{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
 
     .gradient-overlay {
       padding-top: 50px;
-      border: 5px solid var(--var-bg-dark-blue-color);
       z-index: 99;
       width: 100%;
       height: 100%;
@@ -287,18 +238,10 @@
         z-index: 2;
       }
 
-      .engagement-number {
-        top: 5px;
-        left: 5px;
-        font-size: 18px;
-        font-weight: 600;
-        opacity: 0.3;
-        position: absolute;
-      }
-
-      .pi {
+      img {
         display: block;
-        font-size: 90px;
+        width: 150px;
+        height: 150px;
         margin: auto;
         padding: 20px;
       }
@@ -316,7 +259,6 @@
 
     .gradient-overlay:hover {
       background: var(--var-bg-gradient-green-color);
-      border: 5px solid var(--var-bg-grey-blue-color);
       cursor: pointer;
 
       .pi {
@@ -345,16 +287,15 @@
     margin-bottom: 100px;
   }
 
-  .values-img {
-    width: 90%;
-    border-top-right-radius: 30%;
-    height: 300px;
+  .values-img{
+    width: 100%;
+    height: 100%;
   }
 
   .values-tag {
     min-width: 300px;
     height: 180px;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     font-size: 18px;
     border-radius: 15px;
@@ -366,16 +307,21 @@
 .newsletter-section {
   margin-bottom: 100px;
 
+  .newsletter-card-bg{
+    background: url("../../../assets/images/bg NL.jpg") center no-repeat !important;
+    background-size: auto;
+  }
+
   .newsletter-card {
     min-width: 500px;
     height: 150px;
     background: var(--var--blue-text-color);
     color: var(--var-white-text-color);
     padding: 30px;
-    margin: 20px;
+    margin: 10px;
 
     .newsletter-title {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
@@ -385,8 +331,8 @@
     .newsletter-subtitle {
       font-size: 15px;
       font-weight: 100;
-      padding-left: 60px;
-      width: 70%;
+      padding-left: 40px;
+      width: 80%;
       text-align: left;
     }
 
@@ -415,7 +361,7 @@
         background: var(--var--blue-text-color);
         color: var(--var-white-text-color);
         padding: 10px;
-        height: 50px;
+        height: 48px;
         border: none;
         border-bottom: 1px solid var(--var-bg-white-color);
       }
@@ -424,6 +370,7 @@
 }
 
 .sponsors-section {
+  margin-bottom: 100px;
 
   .sponsor-card {
     width: 100%;

@@ -1,0 +1,53 @@
+.footer-section{
+  color: var(--var-white-text-color);
+  background: url("../../../assets/images/SLIDER/slider2.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  .footer-container{
+    padding: 0 10%;
+
+    .high-footer {
+      padding: 50px 0 100px 0;
+
+      .divider {
+        width: .5px;
+        height: 115px; /* Adjust the height of the divider as needed */
+        background-color: #ccc; /* Change the color of the divider */
+        margin: 90px 30px; /* Adjust the spacing between the content and the divider */
+        position: relative;
+      }
+
+      .footer-title{
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      .logo-img{
+        width: 50px;
+        height: 50px;
+        border-top-right-radius: 10px;
+        margin: 10px;
+        border: .5px solid var(--var-bg-white-color);
+        padding: 2px;
+      }
+
+      .demande-devis {
+        margin-top: 30px;
+        font-weight: 100;
+        color: var(--var-white-text-color);
+        background: var(--var-bg-transparent-color);
+        border: 1px solid var(--var-bg-white-color);
+      }
+    }
+  }
+
+  .bottom-footer{
+    background:  var(--var-bg-marine-blue-color);
+    color: var(--var-white-text-color);
+  }
+
+
+}
