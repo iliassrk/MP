@@ -1,0 +1,35 @@
+.header-section {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  top: -150px;
+  margin-bottom: -88px;
+  z-index: 1;
+
+  .header-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 78, 134, 0.34);
+    text-align: center;
+    color: var(--var-white-text-color);
+
+    .header-title {
+      position: relative;
+      top: 313px;
+      font-size: 50px;
+      margin: 20px 40px;
+    }
+
+    .header-sub-title {
+      position: relative;
+      top: 313px;
+      margin: auto;
+      width: 700px;
+      font-size: 20px;
+      text-align: justify-all;
+    }
+
+
+  }
+}

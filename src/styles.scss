@@ -8,7 +8,10 @@
 :root{
   /*text-colors */
   --var-white-text-color: #FFF;
+  --var-grey-text-color: #919191;
   --var-dark-blue-text-color: #08222F;
+  --var--blue-color: #004e93;
+  --var-cyan-color: #009add;
   --var--blue-text-color: #089BE4;
   --var-cyan-text-color: #15AFE2;
   --var-light-green-text-color: rgba(0,225,184,1);
@@ -34,6 +37,10 @@
   font-family: 'Dine';
   src: url('~src/assets/styles/D-DINE-fonts/D-DIN.ttf');
 }
+@font-face {
+  font-family: 'Caveat mper';
+  src: url('~src/assets/styles/Caveat/Caveat-Regular.ttf');
+}
 
 *{
   //font-family:  'Lato', sans-serif;
@@ -42,6 +49,17 @@
   margin: 0;
 }
 
+.font-din-exp {
+ font-family: "D-DIN Exp", sans-serif;
+}
+
+.font-lato {
+ font-family: "Lato", sans-serif;
+}
+
+.font-caveat-mper {
+ font-family: "Caveat mper", sans-serif;
+}
 
 .btn{
   padding: 15px 30px;
@@ -67,12 +85,32 @@
   font-weight: 700;
 }
 
+.weight-400{
+  font-weight: 400;
+}
+
+.page-header-title {
+  font-size: 30px;
+  color: var(--var-white-text-color);
+  font-weight: 700;
+  font-family: "D-DIN", sans-serif;
+  text-align: center;
+}
+
+.page-header-sub-title {
+  font-size: 20px;
+  color: var(--var-grey-text-color);
+  font-weight: 400;
+  font-family: "D-DIN Exp", sans-serif;
+  text-align: center;
+}
+
 
 .mper-header{
   text-align: center;
   margin: auto;
   font-size: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 900;
 
   img{
@@ -84,25 +122,34 @@
   }
 
   .light-title{
-    color: var(--var-cyan-text-color);
+    color: var(--var--blue-color);
     text-transform: uppercase;
     display: inline-block;
+    font-weight: 700;
   }
 
   .dark-title{
-    color: var(--var-dark-blue-text-color);
+    color: var(--var-cyan-color);
     text-transform: uppercase;
     display: inline-block;
     margin-right: 6px;
+    font-weight: 700;
   }
+
+  .border-b{
+  background: var(--var--blue-color);
+  width: 36px;
+  height: 4px;
+  margin-left: auto;
+}
 }
 
 .mper-sub-header{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   h4{
     color: var(--var-dark-blue-text-color);
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 

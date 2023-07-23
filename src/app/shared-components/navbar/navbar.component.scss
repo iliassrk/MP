@@ -95,6 +95,10 @@
         cursor: pointer;
       }
 
+      .router-active{
+        border-bottom: 5px solid var(--var-bg-cyan-blue-color);
+      }
+
       .devis-btn{
         color: var(--var-white-text-color);
         background: var(--var-bg-dark-blue-color);

@@ -13,6 +13,9 @@ import {NgOptimizedImage} from "@angular/common";
 import {FlexModule} from "@angular/flex-layout";
 import {CarouselModule} from "primeng/carousel";
 import {ButtonModule} from "primeng/button";
+import { SecteursActivitesComponent } from './shared-components/secteurs-activites/secteurs-activites.component';
+import { SecteursActivitesPageComponent } from './pages/secteurs-activites-page/secteurs-activites-page.component';
+import { HeaderTitleSectionComponent } from './shared-components/header-title-section/header-title-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import {ButtonModule} from "primeng/button";
     NavbarComponent,
     FooterComponent,
     HomePageComponent,
-    CompanyComponent
+    CompanyComponent,
+    SecteursActivitesComponent,
+    SecteursActivitesPageComponent,
+    HeaderTitleSectionComponent
   ],
   imports: [
     BrowserModule,
