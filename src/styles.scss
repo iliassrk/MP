@@ -22,7 +22,8 @@
   --var-bg-cyan-blue-color: #009CED;
   --var-bg-white-color: #FFF;
   --var-bg-grey-blue-color: rgba(158, 195, 224, 0.58);
-  --var-bg-marine-blue-color: #08222F;
+  --var-bg-marine-blue-color: #156799;
+  //--var-bg-marine-blue-color: #08222F;
 
   /* background-gradient-colors */
   --var-bg-gradient-blue-color: linear-gradient(215deg, rgba(25,76,129,1) 33%, rgba(0,156,237,1) 63%);
@@ -144,12 +145,16 @@
 }
 }
 
+.color-marine-blue {
+  color: var(--var-bg-marine-blue-color);
+}
+
 .mper-sub-header{
   text-align: center;
   margin-bottom: 30px;
   h4{
     color: var(--var-dark-blue-text-color);
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 

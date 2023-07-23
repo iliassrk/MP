@@ -1,3 +1,5 @@
+.home-page {
+  position: relative;
 .carousel-section {
   width: 100%;
   height: 1050px;
@@ -54,8 +56,8 @@
       top: 35%;
       margin: auto;
       width: 700px;
-      font-size: 22px;
-      line-height: 35px;
+      font-size: 27px;
+      //line-height: 35px;
       text-align: justify-all;
     }
 
@@ -63,19 +65,19 @@
       background: var(--var-bg-gradient-blue-color);
       color: var(--var-white-text-color);
       padding: 20px 40px;
-      top: 50%;
+      top: 46%;
       width: 200px;
     }
 
     .discover-us {
       position: relative;
-      top: 57%;
+      top: 55%;
       font-size: 22px;
     }
 
     .discover-us-btn {
       position: relative;
-      top: 60%;
+      top: 56%;
       padding: 20px 8px;
       background: var(--var-bg-transparent-color);
       border: 2px solid var(--var-bg-white-color);
@@ -168,7 +170,7 @@
 
       .engagement-card-title {
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         position: relative;
         margin: auto;
@@ -180,7 +182,9 @@
     .gradient-overlay:hover {
       background: var(--var-bg-gradient-green-color);
       cursor: pointer;
-
+      img{
+      filter: brightness(0) invert(1);
+      }
       .pi {
         color: var(--var-white-text-color);
       }
@@ -195,16 +199,16 @@
 }
 
 .values-section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
 
   .values-text {
     color: var(--var-dark-blue-text-color);
     line-height: 30px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 200;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 
   .values-img{
@@ -213,14 +217,16 @@
   }
 
   .values-tag {
-    min-width: 300px;
+    min-width: 260px;
     height: 180px;
     padding: 12px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 15px;
+    font-weight: 400;
     border: 2px solid var(--var-bg-marine-blue-color);
-    color: var(--var-dark-blue-text-color);
+    color: var(--var-bg-marine-blue-color);
+    //color: var(--var-dark-blue-text-color);
   }
 }
 
@@ -233,7 +239,7 @@
   }
 
   .newsletter-card {
-    min-width: 500px;
+    min-width: 525px;
     height: 150px;
     background: var(--var--blue-text-color);
     color: var(--var-white-text-color);
@@ -244,15 +250,16 @@
       font-size: 22px;
       font-weight: 700;
       text-transform: uppercase;
-      text-align: center;
+      //text-align: center;
+      padding-left: 23px;
       margin-bottom: 20px;
     }
 
     .newsletter-subtitle {
       font-size: 15px;
       font-weight: 100;
-      padding-left: 40px;
-      width: 80%;
+      padding-left: 23px;
+      width: 303px;
       text-align: left;
     }
 
@@ -306,6 +313,73 @@
   }
 }
 
+.sponsors-img:hover  {
+
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%); /* Firefox */ }
+
+.sponsors-img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%); /* Firefox */ }
+
 .empty-space {
   height: 500px;
+}
+
+
+  .img-fluid-1{
+    position: absolute;
+    top: 1330px;
+    right: 0;
+    width: 400px;
+    z-index: -1;
+    float: right;
+    object-position: 226px 0px;
+  }
+  .img-fluid-2{
+    position: absolute;
+    top: 2459px;
+    right: 29%;
+    width: 400px;
+    z-index: -1;
+    float: right;
+  }
+  .img-fluid-3{
+    position: absolute;
+    top: 1900px;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+    float: right;
+    object-position: -233px 0px;
+  }
+  .img-fluid-4{
+    position: absolute;
+    top: 2963px;
+    right: 0;
+    width: 400px;
+    z-index: -1;
+    float: right;
+    object-position: 226px 0px;
+
+  }
+  .img-fluid-5{
+    position: absolute;
+    top: 2963px;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+    float: right;
+    object-position: -333px 0px;
+  }
+  .img-fluid-6{
+    position: absolute;
+    top: 4088px;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+    float: right;
+    object-position: -277px 0px;
+  }
 }
