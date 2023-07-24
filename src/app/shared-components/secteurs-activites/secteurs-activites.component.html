@@ -1,8 +1,21 @@
-<app-mper-header titleDark="secteurs " [titleLight]="'d\'activités'" subTitle="Nous atouts selon votre activité"></app-mper-header>
+<app-mper-header [hidden]="hiddenHeader"
+                 titleDark="secteurs"
+                 [titleLight]="'d\'activités'"
+                 [subTitle]="title"></app-mper-header>
 
 <div class="activity-section container">
-  <div class="row">
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
+  <div class="row" style="justify-content: center;">
+    <div routerLinkActive="secteur-active"
+      routerLink="/secteurs-activites/automobile" class="secteur-card {{colClass}} align-self-center p-4">
+      <div class="activity-card">
+<!--        <img class="img-fluid" src="./assets/images/découpe%20img/_0034_Rectangle-15-copie-min.png">-->
+        <img class="img-fluid" src="./assets/MPER_IMAGE/secteur_activite/02_main/automobile.png">
+      </div>
+      <div class="discover-activity">
+        <span> découvrir <i class="pi pi-chevron-right"></i></span>
+      </div>
+    </div>
+    <div class="secteur-card {{colClass}} align-self-center p-4">
       <div class="activity-card">
         <img class="img-fluid" src="./assets/images/découpe%20img/_0034_Rectangle-15-copie-min.png">
       </div>
@@ -10,15 +23,7 @@
         <span> découvrir <i class="pi pi-chevron-right"></i></span>
       </div>
     </div>
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
-      <div class="activity-card">
-        <img class="img-fluid" src="./assets/images/découpe%20img/_0034_Rectangle-15-copie-min.png">
-      </div>
-      <div class="discover-activity">
-        <span> découvrir <i class="pi pi-chevron-right"></i></span>
-      </div>
-    </div>
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
+    <div class="secteur-card {{colClass}} align-self-center p-4">
       <div class="activity-card">
         <img class="img-fluid" src="./assets/images/découpe%20img/_0033_Rectangle-15-copie-2-min.png">
       </div>
@@ -26,7 +31,7 @@
         <span> découvrir <i class="pi pi-chevron-right"></i></span>
       </div>
     </div>
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
+    <div class="secteur-card {{colClass}} align-self-center p-4">
       <div class="activity-card">
         <img class="img-fluid" src="./assets/images/découpe%20img/_0030_Objet-dynamique-vectoriel-min.png">
       </div>
@@ -34,7 +39,7 @@
         <span> découvrir <i class="pi pi-chevron-right"></i></span>
       </div>
     </div>
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
+    <div class="secteur-card {{colClass}} align-self-center p-4">
       <div class="activity-card">
         <img class="img-fluid" src="./assets/images/découpe%20img/_0032_Objet-dynamique-vectoriel-min.png">
       </div>
@@ -42,7 +47,7 @@
         <span> découvrir <i class="pi pi-chevron-right"></i></span>
       </div>
     </div>
-    <div class="secteur-card col-lg-4 col-md-6 col-sm-12 align-self-center p-4">
+    <div class="secteur-card {{colClass}} align-self-center p-4">
       <div class="activity-card">
         <img class="img-fluid" src="./assets/images/découpe%20img/_0031_Objet-dynamique-vectoriel-min.png">
       </div>
