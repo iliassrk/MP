@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderTitleSectionComponent } from './header-title-section.component';
+import { MperBannerComponent } from './mper-banner.component';
 
 describe('HeaderTitleSectionComponent', () => {
-  let component: HeaderTitleSectionComponent;
-  let fixture: ComponentFixture<HeaderTitleSectionComponent>;
+  let component: MperBannerComponent;
+  let fixture: ComponentFixture<MperBannerComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderTitleSectionComponent]
+      declarations: [MperBannerComponent]
     });
-    fixture = TestBed.createComponent(HeaderTitleSectionComponent);
+    fixture = TestBed.createComponent(MperBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

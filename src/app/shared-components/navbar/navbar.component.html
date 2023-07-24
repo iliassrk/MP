@@ -37,13 +37,14 @@
         <div class="collapse navbar-collapse menu-nav d-md-none d-lg-inline">
           <div class="navbar-nav">
             <li class="menu-item font-lato d-inline text-bold"
-                routerLinkActive="router-active"
-                routerLink="/home">Accueil</li>
-            <li class="menu-item font-lato d-inline text-bold">Société</li>
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'home'">Accueil</li>
+            <li class="menu-item font-lato d-inline text-bold" [routerLinkActive]="'router-active'"
+                [routerLink]="'company'">Société</li>
             <li class="menu-item font-lato text-bold">Savoir-Faire</li>
             <li class="menu-item font-lato d-inline text-bold"
-                routerLinkActive="router-active"
-                routerLink="/secteurs-activites">Secteurs d'activités</li>
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'secteurs-activites'">Secteurs d'activités</li>
             <li class="menu-item font-lato d-inline text-bold">Parc-machines</li>
             <li class="menu-item font-lato d-inline text-bold">Contact</li>
             <li class="">

@@ -15,7 +15,9 @@ import {CarouselModule} from "primeng/carousel";
 import {ButtonModule} from "primeng/button";
 import { SecteursActivitesComponent } from './shared-components/secteurs-activites/secteurs-activites.component';
 import { SecteursActivitesPageComponent } from './pages/secteurs-activites-page/secteurs-activites-page.component';
-import { HeaderTitleSectionComponent } from './shared-components/header-title-section/header-title-section.component';
+import { MperBannerComponent } from './shared-components/mper-banner/mper-banner.component';
+import { MperHeaderComponent } from './shared-components/mper-header/mper-header.component';
+import { EquipeCardComponent } from './shared-components/equipe-card/equipe-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { HeaderTitleSectionComponent } from './shared-components/header-title-se
     CompanyComponent,
     SecteursActivitesComponent,
     SecteursActivitesPageComponent,
-    HeaderTitleSectionComponent
+    CompanyComponent,
+    MperHeaderComponent,
+    MperBannerComponent,
+    EquipeCardComponent
   ],
   imports: [
     BrowserModule,
