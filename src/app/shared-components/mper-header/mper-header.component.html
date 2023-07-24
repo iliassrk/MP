@@ -1,0 +1,14 @@
+<div class="mper-header">
+  <div>
+    <img src="./assets/images/icon%20titre.svg">
+    <h3 class="dark-title font-din-exp text-bold">{{titleDark}}
+      <div *ngIf="titleLight == ''" class="border-b"></div>
+    </h3>
+    <h3 class="light-title font-din-exp text-bold"> {{titleLight}}
+      <div *ngIf="titleLight != ''" class="border-b"></div>
+    </h3>
+  </div>
+</div>
+<div *ngIf="subTitle != ''" class="mper-sub-header">
+  <h4 [ngClass]="italic ? 'font-caveat-mper' : ''">{{ subTitle }}</h4>
+</div>

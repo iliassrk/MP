@@ -55,8 +55,14 @@
         }
       }
 
+      .menu-item-active {
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 5px solid rgba(0, 156, 237, 0.5);
+      }
+
       .menu-item:hover {
-        border-bottom: 3px solid var(--var-bg-cyan-blue-color);
+        color: var(--var-white-text-color);
+        border-bottom: 5px solid var(--var-bg-cyan-blue-color);
         cursor: pointer;
       }
 
@@ -90,7 +96,13 @@
         border-bottom: 5px solid var(--var-bg-transparent-color);
       }
 
+      .menu-item-active {
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 5px solid rgba(0, 156, 237, 0.5);
+      }
+
       .menu-item:hover {
+        color: var(--var-white-text-color);
         border-bottom: 5px solid var(--var-bg-cyan-blue-color);
         cursor: pointer;
       }
