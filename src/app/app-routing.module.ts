@@ -9,6 +9,9 @@ import {
 import {
   ActiviteFerroviaireComponent
 } from "./pages/secteurs-activites-page/activite-ferroviaire/activite-ferroviaire.component";
+import {
+  ActiviteAgroAlimentaireComponent
+} from "./pages/secteurs-activites-page/activite-agro-alimentaire/activite-agro-alimentaire.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -23,6 +26,9 @@ const routes: Routes = [
   },{
     path: 'secteurs-activites/ferroviaire',
     component:ActiviteFerroviaireComponent
+  },{
+    path: 'secteurs-activites/agro-alimentaire',
+    component:ActiviteAgroAlimentaireComponent
   }
 ];
 
