@@ -19,6 +19,7 @@ import { MperBannerComponent } from './shared-components/mper-banner/mper-banner
 import { MperHeaderComponent } from './shared-components/mper-header/mper-header.component';
 import { EquipeCardComponent } from './shared-components/equipe-card/equipe-card.component';
 import { ActiviteAutomobileComponent } from './pages/secteurs-activites-page/activite-automobile/activite-automobile.component';
+import { ActiviteAeronautiqueComponent } from './pages/secteurs-activites-page/activite-aeronautique/activite-aeronautique.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ActiviteAutomobileComponent } from './pages/secteurs-activites-page/act
     MperHeaderComponent,
     MperBannerComponent,
     EquipeCardComponent,
-    ActiviteAutomobileComponent
+    ActiviteAutomobileComponent,
+    ActiviteAeronautiqueComponent
   ],
   imports: [
     BrowserModule,
