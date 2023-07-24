@@ -1,10 +1,8 @@
 <app-mper-header [hidden]="hiddenHeader"
-                 titleDark="secteurs "
+                 titleDark="secteurs"
                  [titleLight]="'d\'activités'"
-                 subTitle="Nous atouts selon votre activité"></app-mper-header>
-<div class="mper-sub-header">
-  <h4 class="font-din-exp">{{title}}</h4>
-</div>
+                 [subTitle]="title"></app-mper-header>
+
 <div class="activity-section container">
   <div class="row" style="justify-content: center;">
     <div routerLinkActive="secteur-active"

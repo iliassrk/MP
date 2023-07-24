@@ -1,20 +1,14 @@
-<app-header-title-section
+<app-mper-banner
   title="Automobile"
   titleSub="Accueil / Secteurs d’Activités / Automobile"
   urlImg="../../../assets/images/bg-Automobile.png">
-</app-header-title-section>
+</app-mper-banner>
 <!--activity-section-->
 <div class="bg-page">
 <div class="container">
 
-  <div class="mper-header">
-    <div>
-      <img src="./assets/images/icon%20titre.svg">
-      <h3 class="dark-title font-din-exp">Automobile
-        <div class="border-b"></div>
-      </h3>
-    </div>
-  </div>
+  <app-mper-header titleLight="Automobile"> </app-mper-header>
+
   <div class="card-section">
     <div class="row">
       <div class="img-col-1 col-md-5 col-sm-12">
@@ -114,15 +108,9 @@
 
   </div>
   </div>
-  <div class="mper-header">
-    <div>
-      <img src="./assets/images/icon%20titre.svg">
-      <h3 class="dark-title font-din-exp">
-        DÉVELOPPEMENTS ET RÉALISATIONS
-        <div class="border-b"></div>
-      </h3>
-    </div>
-  </div>
+
+  <app-mper-header titleLight="DÉVELOPPEMENTS ET RÉALISATIONS"> </app-mper-header>
+
   <app-secteurs-activites [hiddenHeader]="true"
     title="Autres Secteurs d’activités"
                           colClass="col-lg-3 col-md-4 col-sm-6"></app-secteurs-activites>
