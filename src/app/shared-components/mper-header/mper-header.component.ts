@@ -15,6 +15,8 @@ export class MperHeaderComponent {
 
   @Input() italic: boolean = false;
 
+  @Input() hiddenTitle: boolean = false;
+
 
 
 }
