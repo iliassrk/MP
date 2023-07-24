@@ -145,6 +145,25 @@
 }
 }
 
+.mper-item{
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+
+  img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .dark-title{
+    color: #186498;
+    margin-right: 6px;
+    line-height: 30px;
+  }
+
+}
+
 .color-marine-blue {
   color: var(--var-bg-marine-blue-color) !important;
 }
