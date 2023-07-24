@@ -6,6 +6,9 @@ import {SecteursActivitesPageComponent} from "./pages/secteurs-activites-page/se
 import {
   ActiviteAutomobileComponent
 } from "./pages/secteurs-activites-page/activite-automobile/activite-automobile.component";
+import {
+  ActiviteFerroviaireComponent
+} from "./pages/secteurs-activites-page/activite-ferroviaire/activite-ferroviaire.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,6 +20,9 @@ const routes: Routes = [
   },{
     path: 'secteurs-activites/automobile',
     component:ActiviteAutomobileComponent
+  },{
+    path: 'secteurs-activites/ferroviaire',
+    component:ActiviteFerroviaireComponent
   }
 ];
 
