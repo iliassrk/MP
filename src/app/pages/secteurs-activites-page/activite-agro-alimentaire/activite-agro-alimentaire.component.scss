@@ -11,12 +11,11 @@
   }
   .img-fluid-2{
     position: absolute;
-    bottom: -123px;
+    top: 1015px;
     right: 35%;
     width: 400px;
     z-index: -1;
     float: right;
-    object-position: 0 293px;
   }
   .img-fluid-3{
     position: absolute;
@@ -47,14 +46,23 @@
   }
   .description{
     font-size: 26px;
-    line-height: 36px;
+    //line-height: 36px;
     color: #08222f;
   }
 
-  .text-realisatio{
+  .text-realisatio {
     font-size: 20px;
+    text-align: center;
+  }
+
+  .text-blue-realisatio {
+    font-size: 20px;
+    color: #156799;
+    font-weight: bold;
     margin-top: 17px;
     text-align: center;
   }
+
+
 
 }
