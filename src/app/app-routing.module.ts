@@ -7,6 +7,9 @@ import {
   ActiviteAutomobileComponent
 } from "./pages/secteurs-activites-page/activite-automobile/activite-automobile.component";
 import {
+  ActiviteFerroviaireComponent
+} from "./pages/secteurs-activites-page/activite-ferroviaire/activite-ferroviaire.component";
+import {
   ActiviteAeronautiqueComponent
 } from "./pages/secteurs-activites-page/activite-aeronautique/activite-aeronautique.component";
 
@@ -20,6 +23,9 @@ const routes: Routes = [
   },{
     path: 'secteurs-activites/automobile',
     component:ActiviteAutomobileComponent
+  },{
+    path: 'secteurs-activites/ferroviaire',
+    component:ActiviteFerroviaireComponent
   },{
     path: 'secteurs-activites/aeronautique',
     component:ActiviteAeronautiqueComponent
