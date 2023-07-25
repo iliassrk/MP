@@ -15,6 +15,7 @@ import {
 import {
   ActiviteAeronautiqueComponent
 } from "./pages/secteurs-activites-page/activite-aeronautique/activite-aeronautique.component";
+import {ActiviteMedicaleComponent} from "./pages/secteurs-activites-page/activite-medicale/activite-medicale.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -35,6 +36,9 @@ const routes: Routes = [
   },{
     path: 'secteurs-activites/aeronautique',
     component:ActiviteAeronautiqueComponent
+  },{
+    path: 'secteurs-activites/medicale',
+    component:ActiviteMedicaleComponent
   }
 ];
 
