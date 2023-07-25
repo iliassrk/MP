@@ -25,6 +25,7 @@ import { ActiviteAeronautiqueComponent } from './pages/secteurs-activites-page/a
 import { ActiviteMedicaleComponent } from './pages/secteurs-activites-page/activite-medicale/activite-medicale.component';
 import { ActiviteMecaniqueGeneraleComponent } from './pages/secteurs-activites-page/activite-mecanique-generale/activite-mecanique-generale.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     NgOptimizedImage,
     FlexModule,
     CarouselModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -64,33 +64,35 @@
   }
 
   .form-container {
-    border: 2px solid #15afe2;
+    border: 4px ;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     background: none /*linear-gradient(to bottom, #15afe2, #184b80)*/;
     color: white;
+    text-align: center;
   }
 
   .form-fieldset {
     display: inline-block;
     width: calc(50% - 10px);
     margin-bottom: 20px;
+    color: var(--var-cyan-color);
   }
 
-  .form-fieldset > label {
+  .form-fieldset  label {
     display: block;
     margin-bottom: 5px;
-    color: #005c9d;
+    color: var(--var-cyan-color);
   }
 
   .form-field {
-    display: block;
+    display: grid;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #15afe2;
     border-radius: 5px;
     padding: 8px;
-    color: black;
+
   }
 
   .form-field:focus {

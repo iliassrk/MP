@@ -20,34 +20,38 @@
     <BR><BR><BR>
       <div class="form-container">
         <form action="/submit" method="post">
-          <div class="form-fieldset">
-            <label for="first-name">PRENOM:</label>
-            <input type="text" id="first-name" name="first-name" class="form-field" placeholder="Votre prénom" required>
+          <div class="form-fieldset p-float-label">
+            <input pInputText id="first-name" name="first-name" class="form-field"  required>
+            <label htmlFor="first-name" > PRENOM</label>
           </div>
 
-          <div class="form-fieldset">
-            <label for="last-name">NOM:</label>
-            <input type="text" id="last-name" name="last-name" class="form-field" placeholder="Votre nom" required>
+          <div class="form-fieldset p-float-label">
+            <input pInputText id="last-name" name="last-name" class="form-field" required>
+            <label htmlfor="last-name">NOM</label>
           </div>
 
-          <div class="form-fieldset">
-            <label for="address">ADRESSE EMAIL:</label>
-            <input type="text" id="address" name="address" class="form-field" placeholder="Votre adresse" required>
+          <div class="form-fieldset p-float-label">
+
+            <input pInputText id="address" name="address" class="form-field"  required>
+            <label htmlfor="address">ADRESSE EMAIL</label>
           </div>
 
-          <div class="form-fieldset">
-            <label for="phone">NUMERO DE TELEPHONE</label>
-            <input type="text" id="phone" name="phone" class="form-field" placeholder="Votre numéro de téléphone" required>
+          <div class="form-fieldset p-float-label">
+
+            <input pInputText id="phone" name="phone" class="form-field"  required>
+            <label htmlfor="phone">NUMERO DE TELEPHONE</label>
           </div>
 
-          <div class="form-fieldset">
-            <label for="subject">OBJET:</label>
-            <input type="text" id="subject" name="subject" class="form-field" placeholder="Objet de votre message" required>
+          <div class="form-fieldset p-float-label">
+
+            <input pInputText id="subject" name="subject" class="form-field"  required>
+            <label htmlfor="subject">OBJET</label>
           </div>
 
-          <div class="form-fieldset">
-            <label for="message">MESSAGE:</label>
-            <textarea id="message" name="message" class="form-field" rows="5" placeholder="Votre message" required></textarea>
+          <div class="form-fieldset p-float-label">
+
+            <textarea pInputText id="message" name="message" class="form-field" rows="5"  required></textarea>
+            <label htmlfor="message">MESSAGE:</label>
           </div>
 
           <input type="submit" value="ENVOYER VOTRE DEMANDE" class="form-submit">
