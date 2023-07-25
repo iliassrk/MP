@@ -24,6 +24,7 @@ import { ActiviteAgroAlimentaireComponent } from './pages/secteurs-activites-pag
 import { ActiviteAeronautiqueComponent } from './pages/secteurs-activites-page/activite-aeronautique/activite-aeronautique.component';
 import { ActiviteMedicaleComponent } from './pages/secteurs-activites-page/activite-medicale/activite-medicale.component';
 import { ActiviteMecaniqueGeneraleComponent } from './pages/secteurs-activites-page/activite-mecanique-generale/activite-mecanique-generale.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ActiviteMecaniqueGeneraleComponent } from './pages/secteurs-activites-p
     ActiviteFerroviaireComponent,
     ActiviteAgroAlimentaireComponent,
     ActiviteMedicaleComponent,
-    ActiviteMecaniqueGeneraleComponent
+    ActiviteMecaniqueGeneraleComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

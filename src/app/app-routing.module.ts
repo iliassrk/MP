@@ -19,6 +19,8 @@ import {ActiviteMedicaleComponent} from "./pages/secteurs-activites-page/activit
 import {
   ActiviteMecaniqueGeneraleComponent
 } from "./pages/secteurs-activites-page/activite-mecanique-generale/activite-mecanique-generale.component";
+import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
+
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -45,6 +47,10 @@ const routes: Routes = [
   },{
     path: 'secteurs-activites/mecanique-generale',
     component:ActiviteMecaniqueGeneraleComponent
+  }
+  ,{
+    path: 'contact-page',
+    component:ContactPageComponent
   }
 ];
 

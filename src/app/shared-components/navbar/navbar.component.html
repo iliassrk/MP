@@ -20,7 +20,9 @@
                   routerLinkActive="router-active"
                   routerLink="/secteurs-activites">Secteurs d'activités</li>
               <li class="menu-item font-lato text-bold">Parc-machines</li>
-              <li class="menu-item font-lato text-bold">Contact</li>
+              <li class="menu-item font-lato text-bold"
+                  routerLinkActive="router-active"
+                  routerLink="/contact-page" >Contact</li>
               <li class="menu-item font-lato">
                 <button class="btn devis-btn text-bold">
                   DEMANDER UN DEVIS
@@ -46,7 +48,9 @@
                 [routerLinkActive]="'router-active'"
                 [routerLink]="'secteurs-activites'">Secteurs d'activités</li>
             <li class="menu-item font-lato d-inline text-bold">Parc-machines</li>
-            <li class="menu-item font-lato d-inline text-bold">Contact</li>
+            <li class="menu-item font-lato d-inline text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'contact-page'">Contact</li>
             <li class="">
               <p-divider class="inline-content" layout="vertical"></p-divider>
               <button class="btn devis-btn text-bold">
