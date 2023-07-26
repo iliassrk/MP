@@ -12,48 +12,44 @@
     <div class="card-section">
       <div class="row">
         <div class="img-col-1 col-md-5 col-sm-12">
-          <!--<img class="img-fluid" width="300"
-               src="./assets/MPER_IMAGE/\secteur_activite_aeronautique/02_aeronautique/Aéronautique couleur.svg">-->
           <h3 class="text-img">Une Question ? Besoin d'un devis ?</h3>
       </div>
     </div>
     <BR><BR><BR>
-      <div class="form-container">
+      <div class="form-container ">
         <form action="/submit" method="post">
-          <div class="form-fieldset p-float-label">
-            <input pInputText id="first-name" name="first-name" class="form-field"  required>
-            <label htmlFor="first-name" > PRENOM</label>
+          <div class="row">
+            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+              <input pInputText id="first-name" name="first-name" class="form-field"  required>
+              <label htmlFor="first-name" > PRENOM</label>
+            </div>
+            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12 ">
+              <input pInputText id="last-name" name="last-name" class="form-field" required>
+              <label htmlfor="last-name">NOM</label>
+            </div>
           </div>
-
-          <div class="form-fieldset p-float-label">
-            <input pInputText id="last-name" name="last-name" class="form-field" required>
-            <label htmlfor="last-name">NOM</label>
+          <div class="row">
+            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+              <input pInputText id="address" name="address" class="form-field"  required>
+              <label htmlfor="address">ADRESSE EMAIL</label>
+            </div>
+            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+              <input pInputText id="phone" name="phone" class="form-field"  required>
+              <label htmlfor="phone">NUMERO DE TELEPHONE</label>
+            </div>
           </div>
-
-          <div class="form-fieldset p-float-label">
-
-            <input pInputText id="address" name="address" class="form-field"  required>
-            <label htmlfor="address">ADRESSE EMAIL</label>
+          <div class="row">
+            <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
+              <input pInputText id="subject" name="subject" class="form-field"  required>
+              <label htmlfor="subject">OBJET</label>
+            </div>
           </div>
-
-          <div class="form-fieldset p-float-label">
-
-            <input pInputText id="phone" name="phone" class="form-field"  required>
-            <label htmlfor="phone">NUMERO DE TELEPHONE</label>
+          <div class="row">
+            <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
+              <textarea pInputText id="message" name="message" class="form-field" rows="5"  required></textarea>
+              <label htmlfor="message">MESSAGE:</label>
+            </div>
           </div>
-
-          <div class="form-fieldset p-float-label">
-
-            <input pInputText id="subject" name="subject" class="form-field"  required>
-            <label htmlfor="subject">OBJET</label>
-          </div>
-
-          <div class="form-fieldset p-float-label">
-
-            <textarea pInputText id="message" name="message" class="form-field" rows="5"  required></textarea>
-            <label htmlfor="message">MESSAGE:</label>
-          </div>
-
           <input type="submit" value="ENVOYER VOTRE DEMANDE" class="form-submit">
         </form>
       </div>
