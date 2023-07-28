@@ -45,9 +45,9 @@
     }
   }
   .description{
-    font-size: 26px;
+    font-size: 20px;
     //line-height: 36px;
-    color: #08222f;
+    color: #156799;
   }
 
   .text-realisatio {
@@ -120,8 +120,15 @@
     border: 2px solid #15afe2;
     text-align: center;
     border-radius: 10px;
-    padding-bottom: 20px;
-  }
+    padding: 20px;
+    max-width:1140px;
+    background-color: none /*linear-gradient(to bottom, #15afe2, #184b80)*/;
 
+
+
+  }
+  .img{
+    height: 300px;
+  }
 
 }
