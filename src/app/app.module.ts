@@ -27,6 +27,7 @@ import { ActiviteMecaniqueGeneraleComponent } from './pages/secteurs-activites-p
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import {InputTextModule} from "primeng/inputtext";
 import { ParcMachinePageComponent } from './pages/parc-machine-page/parc-machine-page.component';
+import { SavoirFairePageComponent } from './pages/savoir-faire-page/savoir-faire-page.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ParcMachinePageComponent } from './pages/parc-machine-page/parc-machine
     ActiviteMedicaleComponent,
     ActiviteMecaniqueGeneraleComponent,
     ContactPageComponent,
-    ParcMachinePageComponent
+    ParcMachinePageComponent,
+    SavoirFairePageComponent
   ],
   imports: [
     BrowserModule,
