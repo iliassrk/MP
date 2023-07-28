@@ -26,6 +26,7 @@ import { ActiviteMedicaleComponent } from './pages/secteurs-activites-page/activ
 import { ActiviteMecaniqueGeneraleComponent } from './pages/secteurs-activites-page/activite-mecanique-generale/activite-mecanique-generale.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import {InputTextModule} from "primeng/inputtext";
+import { ParcMachinePageComponent } from './pages/parc-machine-page/parc-machine-page.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {InputTextModule} from "primeng/inputtext";
     ActiviteAgroAlimentaireComponent,
     ActiviteMedicaleComponent,
     ActiviteMecaniqueGeneraleComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ParcMachinePageComponent
   ],
   imports: [
     BrowserModule,

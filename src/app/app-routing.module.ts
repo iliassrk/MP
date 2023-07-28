@@ -20,6 +20,7 @@ import {
   ActiviteMecaniqueGeneraleComponent
 } from "./pages/secteurs-activites-page/activite-mecanique-generale/activite-mecanique-generale.component";
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
+import {ParcMachinePageComponent} from "./pages/parc-machine-page/parc-machine-page.component";
 
 
 const routes: Routes = [
@@ -51,6 +52,10 @@ const routes: Routes = [
   ,{
     path: 'contact-page',
     component:ContactPageComponent
+  }
+  ,{
+    path: 'parc-machine-page',
+    component:ParcMachinePageComponent
   }
 ];
 
