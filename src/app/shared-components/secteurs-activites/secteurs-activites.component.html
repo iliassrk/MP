@@ -17,10 +17,11 @@
       </div>
     </div>
   </div>
-  <p-carousel *ngIf="carousel" [value]="secteursActivites" [numVisible]="5" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+  <p-carousel *ngIf="carousel" [value]="secteursActivites" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
     <ng-template let-secteur pTemplate="item">
       <div [routerLink]="secteur.routerLink"
            [title]="secteur.title"
+           style="top:20px;"
            class="secteur-card align-self-center p-2">
         <div class="activity-card">
           <img class="img-fluid" [src]="secteur.urlImg">

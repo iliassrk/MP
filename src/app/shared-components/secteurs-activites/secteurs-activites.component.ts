@@ -13,7 +13,7 @@ export class SecteursActivitesComponent {
   responsiveOptions =  [
     {
       breakpoint: '1400px',
-      numVisible: 5,
+      numVisible: 4,
       numScroll: 1
     },
     {
