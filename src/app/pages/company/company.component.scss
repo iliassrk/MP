@@ -27,6 +27,7 @@
 
 .presentation-card {
   padding: 20px;
+  cursor: pointer;
 
   * {
     display: inline-block;
@@ -40,6 +41,14 @@
 
   h4 {
     text-transform: uppercase;
+  }
+}
+
+.presentation-card-active{
+  background: var(--var-bg-gradient-blue-color)!important;
+
+  *{
+    color: var(--var-white-text-color)!important;
   }
 }
 
