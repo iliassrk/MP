@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CompanyComponent {
 
+
+  selectedTabIndex = 1;
+
+
+  onChangeTab(index: number){
+    this.selectedTabIndex = index;
+  }
+
 }
