@@ -28,6 +28,12 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import {InputTextModule} from "primeng/inputtext";
 import { ParcMachinePageComponent } from './pages/parc-machine-page/parc-machine-page.component';
 import { SavoirFairePageComponent } from './pages/savoir-faire-page/savoir-faire-page.component';
+import { ControleComponent } from './pages/savoir-faire-page/controle/controle.component';
+import { FraisageComponent } from './pages/savoir-faire-page/fraisage/fraisage.component';
+import { OutillagePrototypageComponent } from './pages/savoir-faire-page/outillage-prototypage/outillage-prototypage.component';
+import { MontageAssemblageComponent } from './pages/savoir-faire-page/montage-assemblage/montage-assemblage.component';
+import { TournageComponent } from './pages/savoir-faire-page/tournage/tournage.component';
+import { SavoirFaireComponent } from './shared-components/savoir-faire/savoir-faire.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +56,13 @@ import { SavoirFairePageComponent } from './pages/savoir-faire-page/savoir-faire
     ActiviteMecaniqueGeneraleComponent,
     ContactPageComponent,
     ParcMachinePageComponent,
-    SavoirFairePageComponent
+    SavoirFairePageComponent,
+    ControleComponent,
+    FraisageComponent,
+    OutillagePrototypageComponent,
+    MontageAssemblageComponent,
+    TournageComponent,
+    SavoirFaireComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,13 @@ import {
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
 import {ParcMachinePageComponent} from "./pages/parc-machine-page/parc-machine-page.component";
 import {SavoirFairePageComponent} from "./pages/savoir-faire-page/savoir-faire-page.component";
+import {ControleComponent} from "./pages/savoir-faire-page/controle/controle.component";
+import {FraisageComponent} from "./pages/savoir-faire-page/fraisage/fraisage.component";
+import {
+  OutillagePrototypageComponent
+} from "./pages/savoir-faire-page/outillage-prototypage/outillage-prototypage.component";
+import {MontageAssemblageComponent} from "./pages/savoir-faire-page/montage-assemblage/montage-assemblage.component";
+import {TournageComponent} from "./pages/savoir-faire-page/tournage/tournage.component";
 
 
 const routes: Routes = [
@@ -61,6 +68,26 @@ const routes: Routes = [
   ,{
     path: 'savoir-faire-page',
     component:SavoirFairePageComponent
+  }
+  ,{
+    path: 'savoir-faire-page/controle',
+    component:ControleComponent
+  }
+  ,{
+    path: 'savoir-faire-page/fraisage',
+    component:FraisageComponent
+  }
+  ,{
+    path: 'savoir-faire-page/montage-assemblage',
+    component:MontageAssemblageComponent
+  }
+  ,{
+    path: 'savoir-faire-page/outillage-prototypage',
+    component:OutillagePrototypageComponent
+  }
+  ,{
+    path: 'savoir-faire-page/tournage',
+    component:TournageComponent
   }
 ];
 

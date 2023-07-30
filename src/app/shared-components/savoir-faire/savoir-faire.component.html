@@ -1,0 +1,50 @@
+<app-mper-header [hiddenTitle]="hiddenHeader"
+                 titleDark="secteurs"
+                 [titleLight]="'d\'activités'"
+                 [subTitle]="title"></app-mper-header>
+
+<div class="activity-section container">
+  <div *ngIf="!carousel" class="row" style="justify-content: center;">
+    <div *ngFor="let secteur of savoirFaire"
+         [routerLink]="secteur.routerLink" routerLinkActive="secteur-active"
+         [title]="secteur.title"
+         class="secteur-card {{colClass}} align-self-center p-4">
+      <div class="activity-card">
+        <img class="img-fluid" [src]="secteur.urlImg">
+      </div>
+      <div class="discover-activity">
+        <span> découvrir <i class="pi pi-chevron-right"></i></span>
+      </div>
+    </div>
+  </div>
+  <p-carousel *ngIf="carousel" [value]="savoirFaire" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+    <ng-template let-secteur pTemplate="item">
+      <div [routerLink]="secteur.routerLink"
+           [title]="secteur.title"
+           style="top:20px;"
+           class="secteur-card align-self-center p-2">
+        <div class="activity-card">
+          <img class="img-fluid" [src]="secteur.urlImg">
+        </div>
+        <div class="discover-activity">
+          <span> découvrir <i class="pi pi-chevron-right"></i></span>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+  <br>
+  <br>
+  <div class="activity-summary row">
+    <div class="col-lg-9 col-md-12">
+      <img class="activity-logo" src="./assets/images/logo%20+%20icon%20logo/logo%20svg%202.svg">
+      <h6 class="activity-summary-text">Vous avez un besoin précis dans un autre secteur d'activité ?
+        <br>
+        Adressez-nous votre demande</h6>
+    </div>
+    <div class="col-lg-3 col-md-12">
+      <button class="btn read-more text-bold">
+        Envoyer une demande
+      </button>
+    </div>
+  </div>
+</div>
