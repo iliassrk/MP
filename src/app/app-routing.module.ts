@@ -66,27 +66,27 @@ const routes: Routes = [
     component:ParcMachinePageComponent
   }
   ,{
-    path: 'savoir-faire-page',
+    path: 'savoir-faire',
     component:SavoirFairePageComponent
   }
   ,{
-    path: 'savoir-faire-page/controle',
+    path: 'savoir-faire/controle',
     component:ControleComponent
   }
   ,{
-    path: 'savoir-faire-page/fraisage',
+    path: 'savoir-faire/fraisage',
     component:FraisageComponent
   }
   ,{
-    path: 'savoir-faire-page/montage-assemblage',
+    path: 'savoir-faire/montage-assemblage',
     component:MontageAssemblageComponent
   }
   ,{
-    path: 'savoir-faire-page/outillage-prototypage',
+    path: 'savoir-faire/outillage-prototypage',
     component:OutillagePrototypageComponent
   }
   ,{
-    path: 'savoir-faire-page/tournage',
+    path: 'savoir-faire/tournage',
     component:TournageComponent
   }
 ];

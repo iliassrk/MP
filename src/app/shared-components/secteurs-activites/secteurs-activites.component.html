@@ -21,12 +21,11 @@
     <ng-template let-secteur pTemplate="item">
       <div [routerLink]="secteur.routerLink"
            [title]="secteur.title"
-           style="top:20px;"
            class="secteur-card align-self-center p-2">
         <div class="activity-card">
           <img class="img-fluid" [src]="secteur.urlImg">
         </div>
-        <div class="discover-activity">
+        <div class="discover-activity"  style="top:20px;">
           <span> découvrir <i class="pi pi-chevron-right"></i></span>
         </div>
       </div>

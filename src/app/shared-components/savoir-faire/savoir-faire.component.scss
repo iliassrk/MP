@@ -57,10 +57,11 @@
     }
     .activity-card {
       //border: 5px solid var(--var-bg-dark-blue-color);
-      background: var(--var-bg-gradient-blue-color);
-      -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 80%, 100% 100%, 20% 101%, 0% 80%, 0% 20%);
-      clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 80%, 100% 100%, 20% 101%, 0% 80%, 0% 20%);
-
+      //background: var(--var-bg-gradient-blue-color);
+      background: var(--var-cyan-color);
+      -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 109% 80%, 100% 96%, 94% 100%, 0% 100%, 0% 20%);
+      clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 109% 80%, 100% 96%, 94% 100%, 0% 100%, 0% 20%);
+      border-top-left-radius: 80px;
     }
   }
 
