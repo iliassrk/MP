@@ -1,3 +1,4 @@
+<div [class.background-container]="background">
 <app-mper-header [hiddenTitle]="hiddenHeader"
                  titleDark="Savoir"
                  [titleLight]="'faire'"
@@ -12,6 +13,7 @@
       <div class="activity-card">
         <img class="img-fluid" [src]="secteur.urlImg">
       </div>
+      <label class="label-secteur"> {{secteur.title}}</label>
       <div class="discover-activity">
         <span> découvrir <i class="pi pi-chevron-right"></i></span>
       </div>
@@ -32,6 +34,7 @@
       </div>
     </ng-template>
   </p-carousel>
+  <ng-container *ngIf="!background">
   <br>
   <br>
   <div class="activity-summary row">
@@ -47,4 +50,6 @@
       </button>
     </div>
   </div>
+  </ng-container>
+</div>
 </div>

@@ -1,3 +1,4 @@
+
 .activity-section {
 
   margin-bottom: 120px;
@@ -50,7 +51,18 @@
   }
   .secteur-card{
     position: relative;
+    margin-bottom: auto;
   }
+
+  .label-secteur{
+    padding: 5px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .secteur-card:hover {
     .discover-activity {
       display: inline-block;
@@ -62,6 +74,9 @@
       -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 109% 80%, 100% 96%, 94% 100%, 0% 100%, 0% 20%);
       clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 109% 80%, 100% 96%, 94% 100%, 0% 100%, 0% 20%);
       border-top-left-radius: 80px;
+    }
+    .label-secteur{
+      color: var(--var-cyan-color);
     }
   }
 
@@ -96,5 +111,26 @@
       color: var(--var-cyan-text-color);
     }
 
+  }
+}
+
+.background-container{
+  padding: 50px 0;
+  //background: var(--var-bg-gradient-blue-color);
+  background: var(--var--blue-color);
+  .activity-section {
+    margin-bottom: 0px;
+  }
+  .activity-card {
+    border-top-left-radius: 57px !important;
+  }
+  ::ng-deep.mper-sub-header{
+    h4{
+      color:white;
+    }
+  }
+  .label-secteur{
+    color:white;
+    font-size: 22px;
   }
 }

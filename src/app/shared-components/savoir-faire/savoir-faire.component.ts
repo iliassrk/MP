@@ -7,6 +7,7 @@ import {Component, Input} from '@angular/core';
 })
 export class SavoirFaireComponent {
   @Input() hiddenHeader = false;
+  @Input() background = false;
   @Input() carousel = false;
   @Input() title = 'Nous atouts selon votre activité';
   @Input() colClass=  "col-lg-4 col-md-6 col-sm-12"

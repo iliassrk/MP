@@ -3,8 +3,12 @@
   position: relative;
 }
 
+.container{
+  padding: 50px 15px;
+}
+
 .societe-section {
-  margin: 120px 0;
+  margin: 50px 0;
 
   .description {
     padding: 20px 0 80px 20px;
@@ -211,6 +215,46 @@
   }
 }
 
+.custom-container{
+  padding: 0 10%;
+}
+
+.quality-chart-card {
+  background: var(--var--blue-color);
+  color: var(--var-cyan-text-color);
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  border-top-left-radius: 85px;
+
+  .main-title {
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .light-text {
+    font-weight: 100;
+    font-size: 20px;
+  }
+}
+
+.quality-chart-card::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 35px;
+  border-color: transparent transparent var(--var-bg-white-color) transparent;
+}
 
 .img-fluid-1{
   position: absolute;
@@ -231,42 +275,32 @@
 }
 .img-fluid-3{
   position: absolute;
-  top: 1900px;
+  top: 2500px;
   left: 0;
   width: 500px;
-  z-index: -1;
+  z-index: 0;
   float: right;
   object-position: -233px 0px;
 }
-.img-fluid-4{
-  position: absolute;
-  top: 2963px;
-  right: 0;
-  width: 400px;
-  z-index: -1;
-  float: right;
-  object-position: 226px 0px;
-
-}
+//.img-fluid-4{
+//  position: absolute;
+//  top: 2963px;
+//  right: 0;
+//  width: 400px;
+//  z-index: 0;
+//  float: right;
+//  object-position: 226px 0px;
+//
+//}
 .img-fluid-5{
   position: absolute;
-  top: 2963px;
-  left: 0;
+  top: 2500px;
+  right: 0;
   width: 500px;
-  z-index: -1;
+  z-index: 0;
   float: right;
-  object-position: -333px 0px;
+  object-position: 226px 0px;
 }
-.img-fluid-6{
-  position: absolute;
-  top: 4088px;
-  left: 0;
-  width: 500px;
-  z-index: -1;
-  float: right;
-  object-position: -277px 0px;
-}
-
 
 
 
