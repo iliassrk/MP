@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./fraisage.component.scss']
 })
 export class FraisageComponent {
+  selectedTabIndex = 0;
 
+
+  onChangeTab(index: number){
+    this.selectedTabIndex = index;
+  }
 }
