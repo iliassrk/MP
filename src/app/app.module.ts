@@ -34,6 +34,7 @@ import { OutillagePrototypageComponent } from './pages/savoir-faire-page/outilla
 import { MontageAssemblageComponent } from './pages/savoir-faire-page/montage-assemblage/montage-assemblage.component';
 import { TournageComponent } from './pages/savoir-faire-page/tournage/tournage.component';
 import { SavoirFaireComponent } from './shared-components/savoir-faire/savoir-faire.component';
+import {GalleriaModule} from "primeng/galleria";
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { SavoirFaireComponent } from './shared-components/savoir-faire/savoir-fa
     FlexModule,
     CarouselModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

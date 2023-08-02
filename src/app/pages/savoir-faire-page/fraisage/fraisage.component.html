@@ -60,7 +60,14 @@
       </div>
       <div *ngIf="selectedTabIndex == 2" class="row align-self-center mt-5">
         <div class="col-md-6 col-sm-12">
-          <img class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
+          <p-galleria [value]="images"
+                      [showIndicators]="true"
+                      [showThumbnails]="false"
+                      [containerStyle]="{ 'max-width': '640px' }">
+            <ng-template pTemplate="item" let-item>
+              <img [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
+            </ng-template>
+          </p-galleria>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="description">
