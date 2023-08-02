@@ -3,8 +3,12 @@
   position: relative;
 }
 
+.container{
+  padding: 50px 15px;
+}
+
 .societe-section {
-  margin: 120px 0;
+  margin: 50px 0;
 
   .description {
     padding: 20px 0 80px 20px;
@@ -24,8 +28,10 @@
   }
 }
 
-.presentation-card {
+.presentation-card ::ng-deep {
   padding: 20px;
+  cursor: pointer;
+  text-align: center;
 
   * {
     display: inline-block;
@@ -39,6 +45,14 @@
 
   h4 {
     text-transform: uppercase;
+  }
+}
+
+.presentation-card-active{
+  background: var(--var-bg-gradient-blue-color)!important;
+
+  *{
+    color: var(--var-white-text-color)!important;
   }
 }
 
@@ -113,20 +127,181 @@
   margin-bottom: 100px;
 }
 
-.quality-tag{
+.quality-tag {
   padding: 10px;
+
   * {
     display: inline-block;
     color: var(--var--blue-color);
   }
+
   .mper-logo {
     width: 50px;
     height: 50px;
     margin: 0 20px 0 0;
   }
+}
 
-  .svg-img {
-    width: 100px; /* Set the width you want for the SVG */
-    height: 30px; /* Set the height you want for the SVG */
+.steps-section {
+  width: 100%;
+  height: 100%;
+  font-family: "D-DIN", sans-serif;
+  color: var(--var--blue-color);
+  font-size: 18px;
+
+
+  background-size: contain;
+
+  .step-card {
+    margin-bottom: 200px;
+
+    .step-number {
+      font-weight: 700;
+      font-size: 60px;
+      margin: 10px 25px;
+      display: inline-block;
+      position: relative;
+
+      .title-style {
+        width: 6px;
+        height: 43px;
+        position: absolute;
+        top: 25px;
+        right: 35px;
+      }
+
+    }
+
+    .step-title {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 24px;
+      position: relative;
+      top: -10px;
+    }
   }
 }
+
+.expert-matiere-section {
+  color: var(--var-white-text-color);
+  background-image: linear-gradient(-78deg, #218fc5 0%, #218fc5 0%, #1f4b7f 100%);
+  width: 100%;
+  height: 100%;
+  padding: 100px 50px;
+
+  .expert-card {
+    padding: 0 145px;
+    .main-title{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 20px;
+    }
+
+    .tags{
+
+      *{
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      .mper-logo{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.custom-container{
+  padding: 0 10%;
+}
+
+.quality-chart-card {
+  background: var(--var--blue-color);
+  color: var(--var-cyan-text-color);
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  border-top-left-radius: 85px;
+
+  .main-title {
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .light-text {
+    font-weight: 100;
+    font-size: 20px;
+  }
+}
+
+.quality-chart-card::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 35px;
+  border-color: transparent transparent var(--var-bg-white-color) transparent;
+}
+
+.img-fluid-1{
+  position: absolute;
+  top: 1330px;
+  right: 0;
+  width: 400px;
+  z-index: -1;
+  float: right;
+  object-position: 226px 0px;
+}
+.img-fluid-2{
+  position: absolute;
+  top: 2459px;
+  right: 29%;
+  width: 400px;
+  z-index: -1;
+  float: right;
+}
+.img-fluid-3{
+  position: absolute;
+  top: 2500px;
+  left: 0;
+  width: 500px;
+  z-index: 0;
+  float: right;
+  object-position: -233px 0px;
+}
+//.img-fluid-4{
+//  position: absolute;
+//  top: 2963px;
+//  right: 0;
+//  width: 400px;
+//  z-index: 0;
+//  float: right;
+//  object-position: 226px 0px;
+//
+//}
+.img-fluid-5{
+  position: absolute;
+  top: 2500px;
+  right: 0;
+  width: 500px;
+  z-index: 0;
+  float: right;
+  object-position: 226px 0px;
+}
+
+
+
+
