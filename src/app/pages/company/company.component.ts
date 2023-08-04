@@ -10,9 +10,15 @@ export class CompanyComponent {
 
   selectedTabIndex = 1;
 
+  footerSelectedTabIndex = 0;
+
 
   onChangeTab(index: number){
     this.selectedTabIndex = index;
+  }
+
+  onChangeFooterTab(index: number){
+    this.footerSelectedTabIndex = index;
   }
 
 }

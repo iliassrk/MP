@@ -3,7 +3,7 @@
   titleSub="Accueil / Société"
   urlImg="../../../assets/images/bg-Automobile.png">
 </app-mper-banner>
-<div class="container">
+<div class="container my-5">
   <app-mper-header titleDark="Société"></app-mper-header>
   <div class="societe-section">
     <div class="row">
@@ -25,21 +25,42 @@
     </div>
   </div>
   <div class="row align-self-center">
-    <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(0)">
+    <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''"
+         class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(0)">
       <img src="./assets/MPER_IMAGE/Societe_equipe/icons/presentation.png">
       <h4 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold">présentation</h4>
     </div>
-    <div [ngClass]="selectedTabIndex == 1 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(1)">
+    <div [ngClass]="selectedTabIndex == 1 ? 'presentation-card-active' : ''"
+         class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(1)">
       <img src="./assets/MPER_IMAGE/Societe_equipe/icons/equipe.png">
       <h4 class="font-lato text-bold">equipe</h4>
     </div>
-    <div [ngClass]="selectedTabIndex == 2 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(2)">
+    <div [ngClass]="selectedTabIndex == 2 ? 'presentation-card-active' : ''"
+         class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(2)">
       <img src="./assets/MPER_IMAGE/Societe_equipe/icons/expertise.png">
       <h4 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold">expertises</h4>
     </div>
   </div>
   <div *ngIf="selectedTabIndex == 0" class="presentation-section">
-    presentation
+    <h3>Maitriser, anticiper et s'engager.</h3>
+    <p><b>Mper Maroc</b> travail dans le domaine de la fabrication mécanique, dont les pièces produites sont destinées
+      aux secteurs :</p>
+    <div class="my-5">
+      <img class="img-fluid" src="../../../assets/MPER_IMAGE/Societe_presentation/img.png">
+    </div>
+    <p>L’écosystème aéronautique marocain représente l’un des plus beaux cas de réussite industrielle dans un pays en
+      développement. Bien sûr, le Maroc ne produit pas d’avions. Le marché mondial de l’aviation est dominé par un
+      duopole constitué de l’Américain Boeing et de l’Européen Airbus. Une suprématie écrasante, renforcée encore
+      récemment par l’acquisition des divisions commerciales des deux derniers concurrents significatifs dans le
+      domaine des monocouloirs courts courriers : le Canadien Bombardier (Airbus) et le Brésilien Embraer (Boeing).
+      Les avionneurs chinois et russes ont bien l’ambition de percer, mais il leur reste encore beaucoup de chemin à
+      faire. Une telle domination en matière d’appareils finis ne veut cependant pas dire qu’il n’y a pas de place
+      pour d’autres acteurs industriels ou d’autres pays. Au contraire. Les chaînes de production des aéronefs
+      modernes sont parmi les plus fragmentées de la planète, tant sur le plan de la myriade de sous-traitants de
+      rangs 1, 2, 3 ou 4 que sur celui de leur distribution géographique Aujourd’hui, à peine vingt ans après le
+      lancement de la première initiative dans le secteur, l’industrie installée au Maroc est devenue le principal
+      exportateur de matériel, pièces et composants aéronautiques du continent africain. Dépassant même, récemment,
+      celle de l’Afrique du Sud. Un exploit qui n'est pas d'ailleurs pas isolé.</p>
   </div>
   <div *ngIf="selectedTabIndex == 1" class="equipe-section">
     <h4 class="font-din-exp text-bold">L'humain comme capital</h4>
@@ -74,7 +95,7 @@
              src="../../../assets/images/découpe%20img/_0039_Calque-1.png">
       </div>
       <div class="col-lg-6 col-md-12">
-        <div style="margin-bottom: 70px">
+        <div style="margin-bottom: 115px">
           <app-equipe-card
             cardTitle="Direction"
             paragraph1="Monsieur SAMIR EL BAGHDADI, dispose d’une expérience de plus de 20 ans dans le domaine.">
@@ -86,11 +107,34 @@
     </div>
   </div>
   <div *ngIf="selectedTabIndex == 2" class="expertises-section">
-    expertises
+    <h3>5 savoir-faire - 1 qualité de précision</h3>
+    <p>L’activité de MAM s’articule autour de 5 savoir-faire complémentaires dans le domaine de la mécanique de
+      précision :</p>
+    <div class="my-5">
+      <div class="expertises-card">
+        Le fraisage
+      </div>
+      <div class="expertises-card">
+        Le tournage
+      </div>
+      <div class="expertises-card">
+        Le montage & l'assemblage
+      </div>
+      <div class="expertises-card">
+        Le contrôle
+      </div>
+      <div class="expertises-card">
+        L’outillage & le prototypage
+      </div>
+    </div>
+    <p>Ces champs d’expertise permettent à l’entreprise de répondre à une amplitude de commandes allant de la pièce
+      mécanique aux prototypes et des pièces unitaires aux petites et grandes séries.</p>
+    <p>MAM s’engage dans chacune de ses productions à proposer des pièces aux finitions précises, travaillées au micron
+      près.</p>
   </div>
-  <div class="my-5">
-    <app-mper-header titleDark="Notre charte" titleLight="Qualité"></app-mper-header>
-  </div>
+</div>
+<div class="my-5">
+  <app-mper-header titleDark="Notre charte" titleLight="Qualité"></app-mper-header>
 </div>
 <div class="custom-container my-5">
   <div class="row align-self-center">
@@ -237,7 +281,34 @@
 </div>
 <div class="expert-matiere-section">
   <div class="custom-container">
-    <div class="row justify-content-between">
+    <div class="expert-matiere-tabs">
+      <div [ngClass]="footerSelectedTabIndex == 0 ? 'footer-tab footer-tab-active': 'footer-tab'"
+           (click)="onChangeFooterTab(0)">contrôle Qualité
+      </div>
+      <div [ngClass]="footerSelectedTabIndex == 1 ? 'footer-tab footer-tab-active': 'footer-tab'"
+           (click)="onChangeFooterTab(1)">Matiéres Usinées
+      </div>
+    </div>
+    <div *ngIf="footerSelectedTabIndex == 0" class="row justify-content-between mb-5">
+      <div class="col-lg-4 col-md-12">
+        <img class="img-fluid"
+             src="../../../assets/MPER_IMAGE/Societe_equipe/05_controle_qualite/_0041_Contrôle-Qualité.png">
+      </div>
+      <div class="col-lg-8 col-md-12 expert-card">
+        <h3 class="main-title font-lato p-3">MAITRISE & EXIGENCE</h3>
+        <p class="p-3">
+          Dans un souci permanent de satisfaction client et dans l'optique de toujours progresser en corrélation avec
+          les évolutions du marché, MPERMAROC ne cesse d'élever son niveau d'exigence.
+        </p>
+        <p class="p-3">
+          C'est à travers le développement de multiples démarches d'améliorations continues sur les aspects qualité et
+          sécurité que MAM est en mesure de maintenir un niveau de qualité élevé et garantir des prestations optimales.
+        </p>
+        <p class="p-3">Un haut niveau de qualité qui se reflète dans les relations durables et de confiance qui se sont
+          tissées avec ses différents partenaires.</p>
+      </div>
+    </div>
+    <div *ngIf="footerSelectedTabIndex == 1" class="row justify-content-between">
       <div class="col-lg-4 col-md-12">
         <img class="img-fluid" src="../../../assets/images/découpe%20img/_0042_Matières-Usinées.png">
       </div>
