@@ -1,7 +1,7 @@
 <app-mper-banner
   title="Savoir-faire"
   titleSub="Accueil / Savoir-faire / Contrôle"
-  urlImg="../assets/MPER_IMAGE/savoir_faire/01_head/bg.png">
+  urlImg="../assets/MPER_IMAGE/savoir_faire/01_head/bg-controle.png">
 </app-mper-banner>
 
 <!--activity-section-->
@@ -9,10 +9,13 @@
 <!-- Contrôle -->
 <div class="container">
   <app-mper-header titleDark="Contrôle"></app-mper-header>
-  <div class="societe-section">
+  <div class="societe-section align-self-center">
     <div class="row align-self-center">
-      <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(0)">
-        <h5 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold">Notre Expertise</h5>
+      <h5 class="col-md4 col-sm-12 my-3 text-center">Une garantie qualité & conformité optimale</h5>
+    </div>
+    <div class="row align-self-center">
+      <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card " (click)="onChangeTab(0)">
+        <h5 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold  ">Notre Expertise</h5>
       </div>
       <div [ngClass]="selectedTabIndex == 1 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(1)">
         <h5 class="font-lato text-bold">Notre parc Machine</h5>
