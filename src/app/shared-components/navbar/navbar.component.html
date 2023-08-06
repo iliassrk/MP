@@ -1,43 +1,16 @@
 <div class="menu-container">
-  <div class="row justify-content-between">
+  <div class="navbar-menu row justify-content-between max-menu-container">
     <div class="col-2 align-self-center">
-      <img class="logo inline-content" src="./assets/images/logo%20+%20icon%20logo/logo%20svg.svg" alt="logo">
+      <img class="logo inline-content" style="min-width: 160px;" src="./assets/images/logo%20+%20icon%20logo/logo%20svg.svg" alt="logo">
     </div>
-    <div class="col-9 align-self-center" style="text-align: right">
-      <div class="navbar-menu inline-content">
-        <button class="navbar-toggler d-lg-none d-md-inline" (click)="clickToggleNav()" type="button">
-          <i class="pi pi-bars"></i>
-        </button>
-        <ng-template [ngIf]="toggleNav">
-          <div class="nav-sm">
-            <div class="navbar-nav">
-              <li class="menu-item font-lato text-bold"
-                  routerLinkActive="router-active"
-                  routerLink="/home">Accueil</li>
-              <li class="menu-item font-lato text-bold">Société</li>
-              <li class="menu-item font-lato text-bold">Savoir-Faire</li>
-              <li class="menu-item font-lato text-bold"
-                  routerLinkActive="router-active"
-                  routerLink="/secteurs-activites">Secteurs d'activités</li>
-              <li class="menu-item font-lato text-bold">Parc-machines</li>
-              <li class="menu-item font-lato text-bold"
-                  routerLinkActive="router-active"
-                  routerLink="/contact-page" >Contact</li>
-              <li class="menu-item font-lato">
-                <button class="btn devis-btn text-bold">
-                  DEMANDER UN DEVIS
-                </button>
-              </li>
-              <li class="menu-item font-lato text-bold">
-                <div class="search-section inline-content">
-                  <i class="pi pi-search"></i> Search
-                </div>
-              </li>
-            </div>
-          </div>
-        </ng-template>
+    <div class="col-7 align-self-center" style="text-align: center">
+      <div class=" inline-content">
         <div class="collapse navbar-collapse menu-nav d-md-none d-lg-inline">
-          <div class="navbar-nav">
+          <div class="navbar-nav" style="    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;">
             <li class="menu-item font-lato d-inline text-bold"
                 [routerLinkActive]="'router-active'"
                 [routerLink]="'home'">Accueil</li>
@@ -55,21 +28,63 @@
             <li class="menu-item font-lato d-inline text-bold"
                 [routerLinkActive]="'router-active'"
                 [routerLink]="'contact-page'">Contact</li>
-            <li class="">
-              <p-divider class="inline-content" layout="vertical"></p-divider>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 align-self-center">
+      <div class="collapse navbar-collapse menu-nav d-md-none d-lg-inline">
+        <div style="    display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;">
+
+            <button class="btn devis-btn text-bold">
+              DEMANDER UN DEVIS
+            </button>
+
+  <!--          <p-divider class="inline-content" layout="vertical"></p-divider>-->
+            <div class="search-section inline-content">
+              <i class="pi pi-search"></i>
+            </div>
+        </div>
+      </div>
+      <button style="float: right;" class="navbar-toggler d-lg-none d-md-inline" (click)="clickToggleNav()" type="button">
+        <i class="pi pi-bars"></i>
+      </button>
+      <ng-template [ngIf]="toggleNav">
+        <div class="nav-sm">
+          <div class="navbar-nav">
+            <li class="menu-item font-lato text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'home'">Accueil</li>
+            <li class="menu-item font-lato text-bold" [routerLinkActive]="'router-active'"
+                [routerLink]="'company'">Société</li>
+            <li class="menu-item font-lato text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'savoir-faire'">Savoir-Faire</li>
+            <li class="menu-item font-lato text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'secteurs-activites'">Secteurs d'activités</li>
+            <li class="menu-item font-lato text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'parc-machine-page'">Parc-machines</li>
+            <li class="menu-item font-lato text-bold"
+                [routerLinkActive]="'router-active'"
+                [routerLink]="'contact-page'">Contact</li>
+            <li class="menu-item font-lato">
               <button class="btn devis-btn text-bold">
                 DEMANDER UN DEVIS
               </button>
             </li>
-            <li class="d-inline text-bold">
-              <p-divider class="inline-content" layout="vertical"></p-divider>
+            <li class="menu-item font-lato text-bold">
               <div class="search-section inline-content">
-                <i class="pi pi-search"></i>
+                <i class="pi pi-search"></i> Search
               </div>
             </li>
           </div>
         </div>
-      </div>
+      </ng-template>
     </div>
   </div>
 </div>

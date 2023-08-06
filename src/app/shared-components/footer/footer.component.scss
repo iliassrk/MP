@@ -6,10 +6,12 @@
 
 
   .footer-container{
-    padding: 0 10%;
+    padding: 0 15px;
 
     .high-footer {
-      padding: 50px 0 100px 0;
+      padding: 50px 0 50px 0;
+      margin: auto;
+      width: fit-content;
 
       .divider {
         width: .5px;
@@ -23,6 +25,18 @@
         text-transform: uppercase;
         font-weight: 600;
         margin-bottom: 40px;
+      }
+
+      .footer-nav{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+
+        li{
+          cursor: pointer;
+        }
       }
 
       .logo-img{
