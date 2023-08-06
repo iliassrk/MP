@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CompanyComponent {
 
 
-  selectedTabIndex = 1;
+  selectedTabIndex = 0;
 
   footerSelectedTabIndex = 0;
 
