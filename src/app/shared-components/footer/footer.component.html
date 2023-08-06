@@ -1,44 +1,63 @@
 <div class="footer-section">
   <div class="footer-container dark-blue-overlay">
     <div class="row justify-content-between high-footer">
-      <div class="col-md-3 col-sm-12 align-items-center justify-content-around p-4">
+      <div class="col-md-3 col-sm-12 align-items-center justify-content-around p-2">
         <h5 class="footer-title"><i class="pi pi-circle-fill" style="margin-right: 20px"></i> à propos de nous</h5>
         <img class="logo-img" src="./assets/images/logo%20+%20icon%20logo/icon%20logo%20Matières%20Usinées.svg">
-        <p class="p-2" style="width: 250px;">Spécialisé dans la fabrication mécanique avec des machines à commandes
+        <p class="p-2" style="max-width: 250px;">Spécialisé dans la fabrication mécanique avec des machines à commandes
           numérique.</p>
       </div>
-      <div class="divider d-md-inline d-sm-none"></div>
-      <div class="col-md-5 col-sm-12 align-items-center justify-content-around p-4">
+<!--      <div class="divider d-md-inline d-sm-none"></div>-->
+      <div class="col-md-6 col-sm-12 align-items-center justify-content-around p-2">
         <h5 class="footer-title"><i class="pi pi-circle-fill" style="margin-right: 20px"></i> plan du site</h5>
-        <div class="row">
-          <div class="col-4 p-2"><a>Société</a></div>
-          <div class="col-4 p-2"><a>Automobile</a></div>
-          <div class="col-4 p-2"><a>Médicale</a></div>
-          <div class="col-4 p-2"><a>Parc-machines</a></div>
-          <div class="col-4 p-2"><a>Ferroviaire</a></div>
-          <div class="col-4 p-2"><a>Agro-alimentaire</a></div>
-          <div class="col-4 p-2"><a>Contact</a></div>
-          <div class="col-4 p-2"><a>Aéronautique</a></div>
-          <div class="col-4 p-2"><a>Mécanique générale</a></div>
+        <div class="footer-nav">
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'home'">Accueil</li>
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'company'">Société</li>
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'savoir-faire'">Savoir-Faire</li>
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'secteurs-activites'">Secteurs d'activités</li>
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'parc-machine-page'">Parc-machines</li>
+          <li class="p-2 font-lato d-inline text-bold"
+              [routerLinkActive]="'router-active'"
+              [routerLink]="'contact-page'">Contact</li>
+        </div>
+        <div class="footer-nav" style="margin-top: 10px">
+          <li class="font-lato d-inline p-2"
+              *ngFor="let secteur of secteursActivites"
+              [routerLink]="secteur.routerLink"
+              routerLinkActive="secteur-active"
+              [title]="secteur.title"
+          ><a>{{secteur.title}}</a>
+          </li>
         </div>
       </div>
-      <div class="divider d-md-inline d-sm-none"></div>
-      <div class="col-md-3 col-sm-12 align-items-center justify-content-around p-4">
+<!--      <div class="divider d-md-inline d-sm-none"></div>-->
+      <div class="col-md-3 col-sm-12 align-items-center justify-content-around p-2">
         <h5 class="footer-title"><i class="pi pi-circle-fill" style="margin-right: 20px"></i> MPER MAROC</h5>
         <p class="p-2"><i class="pi pi-envelope" style="margin-right: 20px"></i> contact@mpermaroc.com</p>
-        <p class="p-2"><i class="pi pi-phone" style="margin-right: 20px"></i> 06 61 80 50 20</p>
-        <button class="btn demande-devis text-bold">
-          DEMANDER UN DEVIS
-        </button>
+        <p class="p-2"><i class="pi pi-phone" style="margin-right: 20px"></i> +212 664-786486</p>
+        <p class="p-2" style="align-items: center;display: flex;">
+          <i class="pi pi-facebook" style="font-size: 23px;margin-right: 10px"></i>
+          <i class="pi pi-linkedin" style="font-size: 23px;margin-right: 20px"></i>
+           /mpermaroc</p>
       </div>
     </div>
   </div>
   <div style="padding: 0 10%" class="row justify-content-between bottom-footer">
-    <div class="col-md-3 col-sm-12 align-items-center justify-content-around p-1">
+    <div class="col-md-6 col-sm-12 align-items-center justify-content-around p-1">
       MPER MAROC &COPY; {{ date }} Tous droits réservés
     </div>
     <div style="text-align: right" class="col-md-4 col-sm-12 align-items-center justify-content-around p-1">
-      <span class="pr-5"> Mentions Légales</span>
+      <span class="pr-6"> Mentions Légales</span>
       <span> Politiques De Confidentialité</span>
     </div>
   </div>
