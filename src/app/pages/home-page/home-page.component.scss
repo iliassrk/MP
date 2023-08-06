@@ -143,13 +143,16 @@
 
 
 .engagement-section {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   text-align: center;
 
   .engagement-card {
     width: 222px;
     height: 222px;
     position: relative;
+    margin: auto;
+    margin-bottom: 82px;
+
     //margin: 0 auto 100px auto;
 
     .img-border{
