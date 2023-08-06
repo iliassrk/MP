@@ -69,7 +69,7 @@
 }
 
 .quality-chart-card {
-  background: var(--var--blue-color);
+  background: var(--var-bg-gradient-blue-cyan-color);
   color: var(--var-cyan-text-color);
   text-align: center;
   padding: 40px 20px 30px 20px;
@@ -96,8 +96,8 @@
 .quality-chart-card::before {
   content: "";
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 6px;
+  right: 6px;
   width: 0;
   height: 0;
   border-style: solid;
