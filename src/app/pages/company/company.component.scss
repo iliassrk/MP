@@ -13,7 +13,7 @@
 
     h5 {
       line-height: 40px;
-      font-size: 25px;
+      font-size: 22px;
       color: var(--var-dark-blue-text-color);
       font-weight: 400;
       margin-bottom: 50px;
@@ -137,7 +137,7 @@
   text-align: center;
   padding: 40px 20px 30px 20px;
   border-top-left-radius: 85px;
-
+  height: 100%;
   .main-title {
     font-size: 30px;
     font-weight: 700;
@@ -174,7 +174,7 @@
   font-size: 22px;
   font-weight: 200;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .quality-tag {
@@ -250,9 +250,9 @@
       text-transform: uppercase;
       font-size: 22px;
       font-weight: bold;
-      width: 300px;
-      padding: 30px;
-      margin: 0 50px 80px 50px;
+      width: 280px;
+      padding: 20px;
+      margin: 0 30px 60px 30px;
       opacity: 0.5;
       border-bottom: 5px solid var(--var-bg-white-color);
     }
@@ -268,7 +268,7 @@
   }
 
   .expert-card {
-    padding: 0 145px;
+    //padding: 0 145px;
     .main-title{
       font-size: 30px;
       margin-bottom: 20px;
