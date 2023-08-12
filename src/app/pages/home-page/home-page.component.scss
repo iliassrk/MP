@@ -300,6 +300,10 @@
         outline: none;
       }
 
+      .invalid{
+        border-bottom: 1px solid red;
+      }
+
       ::placeholder {
         color: var(--var-white-text-color);
       }

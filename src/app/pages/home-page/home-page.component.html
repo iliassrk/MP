@@ -147,10 +147,12 @@
           <h5 class="newsletter-subtitle">Inscrivez-vous pour recevoir les dernières mises à jour et nouvelles.</h5>
         </div>
         <div class="newsletter-card col-5">
-          <div class="newsletter-form">
-            <input name="email" placeholder="Entrez votre email">
-            <button class="send-btn"><i class="pi pi-send"></i></button>
-          </div>
+          <form [formGroup]="newsLetterForm" (ngSubmit)="onSubmit()">
+            <div class="newsletter-form">
+              <input [ngClass]="newsLetterForm.touched && newsLetterForm.invalid ? 'invalid': ''" formControlName="email" placeholder="Entrez votre email">
+              <button class="send-btn" type="submit"><i class="pi pi-send"></i></button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
