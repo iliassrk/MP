@@ -1,91 +1,109 @@
 <app-mper-banner
-  title="Contact"
-  titleSub="Contact"
-  urlImg="../../../assets/MPER_IMAGE/contact/bg-contact.png">
+        title="Contact"
+        titleSub="Contact"
+        urlImg="../../../assets/MPER_IMAGE/contact/bg-contact.png">
 </app-mper-banner>
 <!--activity-section-->
 <div class="bg-page">
-  <div class="container">
+    <div class="container">
 
-    <app-mper-header titleLight="NOUS CONTACTER"> </app-mper-header>
+        <app-mper-header titleLight="NOUS CONTACTER"></app-mper-header>
 
-    <div class="card-section">
-      <div class="row">
-        <div class="img-col-12 col-md-12 col-sm-12">
-          <h3 class="text-img">Une Question ? Besoin d'un devis ?</h3>
-      </div>
+        <div class="card-section">
+            <div class="row">
+                <div class="img-col-12 col-md-12 col-sm-12">
+                    <h3 class="text-img">Une Question ? Besoin d'un devis ?</h3>
+                </div>
+            </div>
+            <BR><BR><BR>
+            <div class="form-container ">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+                            <input pInputText id="first-name" formControlName="firstName"
+                                   [ngClass]="contactForm.touched && contactForm.controls['firstName'].invalid ? 'invalid-field' : 'form-field'">
+                            <label htmlFor="firstName"
+                                   [ngClass]="contactForm.touched && contactForm.controls['firstName'].invalid ? 'invalid-label' : ''">
+                                PRENOM</label>
+                        </div>
+                        <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+                            <input pInputText id="last-name" formControlName="lastName"
+                                   [ngClass]="contactForm.touched && contactForm.controls['lastName'].invalid ? 'invalid-field' : 'form-field'">
+                            <label htmlfor="lastName"
+                                   [ngClass]="contactForm.touched && contactForm.controls['lastName'].invalid ? 'invalid-label' : ''">NOM</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+                            <input pInputText id="address" formControlName="email"
+                                   [ngClass]="contactForm.touched && contactForm.controls['email'].invalid ? 'invalid-field' : 'form-field'">
+                            <label htmlfor="email"
+                                   [ngClass]="contactForm.touched && contactForm.controls['email'].invalid ? 'invalid-label' : ''">ADRESSE
+                                EMAIL</label>
+                        </div>
+                        <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
+                            <input pInputText id="phone" formControlName="phone"
+                                   [ngClass]="contactForm.touched && contactForm.controls['phone'].invalid ? 'invalid-field' : 'form-field'">
+                            <label htmlfor="phone"
+                                   [ngClass]="contactForm.touched && contactForm.controls['phone'].invalid ? 'invalid-label' : ''">NUMERO
+                                DE TELEPHONE</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
+                            <input pInputText id="subject" formControlName="subject"
+                                   [ngClass]="contactForm.touched && contactForm.controls['subject'].invalid ? 'invalid-field' : 'form-field'">
+                            <label htmlfor="subject"
+                                   [ngClass]="contactForm.touched && contactForm.controls['subject'].invalid ? 'invalid-label' : ''">OBJET</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
+                            <textarea pInputText id="message" formControlName="message" rows="5"
+                                      [ngClass]="contactForm.touched && contactForm.controls['message'].invalid ? 'invalid-field' : 'form-field'"></textarea>
+                            <label htmlfor="message"
+                                   [ngClass]="contactForm.touched && contactForm.controls['message'].invalid ? 'invalid-label' : ''">MESSAGE:</label>
+                        </div>
+                    </div>
+                    <input [disabled]="disableBtn" type="submit" value="ENVOYER VOTRE DEMANDE"
+                           [ngClass]="disableBtn ? 'disabled-btn' : 'form-submit'">
+                </form>
+            </div>
+            <br>
+        </div>
+
+        <img class="img-fluid-1"
+             src="./assets/images/MOTIF%20BACKGROUND/motif-background_0002_04-3-copie.png">
+        <img class="img-fluid-2"
+             src="./assets/images/MOTIF%20BACKGROUND/motif-background_0002_04-3-copie.png">
+        <img class="img-fluid-3"
+             src="./assets/images/MOTIF%20BACKGROUND/motif-background_0000_4s-min-3.png">
     </div>
-    <BR><BR><BR>
-      <div class="form-container ">
-        <form action="/submit" method="post">
-          <div class="row">
-            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
-              <input pInputText id="first-name" name="first-name" class="form-field"  required>
-              <label htmlFor="first-name" > PRENOM</label>
+    <div>
+        <div class="containercon">
+            <div class="row align-self-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+                    <i class="pi pi-phone text-img description"> 05 22 66 24 16 </i>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <i class="pi pi-phone text-img description"> 06 61 80 50 20 </i>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <i class="pi pi-inbox text-img description "> contact@mpermaroc.com </i>
+                </div>
             </div>
-            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
-              <input pInputText id="last-name" name="last-name" class="form-field" required>
-              <label htmlfor="last-name">NOM</label>
+            <div class="row align-self-center ">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <i class="pi pi-map-marker text-img  description pt-4 "> Lotissement Mauritania, Q. I BERNOUSSI -
+                        CASABLANCA </i>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
-              <input pInputText id="address" name="address" class="form-field"  required>
-              <label htmlfor="address">ADRESSE EMAIL</label>
-            </div>
-            <div class="form-fieldset p-float-label col-lg-6 col-md-6 col-sm-12">
-              <input pInputText id="phone" name="phone" class="form-field"  required>
-              <label htmlfor="phone">NUMERO DE TELEPHONE</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
-              <input pInputText id="subject" name="subject" class="form-field"  required>
-              <label htmlfor="subject">OBJET</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-fieldset p-float-label col-lg-12 col-md-12 col-sm-12">
-              <textarea pInputText id="message" name="message" class="form-field" rows="5"  required></textarea>
-              <label htmlfor="message">MESSAGE:</label>
-            </div>
-          </div>
-          <input type="submit" value="ENVOYER VOTRE DEMANDE" class="form-submit">
-        </form>
-      </div>
-      <br>
-  </div>
+        </div>
+        <br>
+        <br>
+        <div class="img">
+            <img class="img-fluid" src="./assets/MPER_IMAGE/contact/maps.png">
+        </div>
+    </div>
 
-  <img class="img-fluid-1"
-       src="./assets/images/MOTIF%20BACKGROUND/motif-background_0002_04-3-copie.png">
-  <img class="img-fluid-2"
-       src="./assets/images/MOTIF%20BACKGROUND/motif-background_0002_04-3-copie.png">
-  <img class="img-fluid-3"
-       src="./assets/images/MOTIF%20BACKGROUND/motif-background_0000_4s-min-3.png">
 </div>
-  <div>
-    <div class="containercon">
-      <div class="row align-self-center">
-        <div class="col-lg-4 col-md-4 col-sm-4 ">
-          <i class="pi pi-phone text-img description"> 05 22 66 24 16 </i>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <i class="pi pi-phone text-img description"> 06 61 80 50 20  </i>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <i class="pi pi-inbox text-img description "> contact@mpermaroc.com </i>
-        </div>
-      </div>
-      <div class="row align-self-center ">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <i class="pi pi-map-marker text-img  description pt-4 ">  Lotissement Mauritania, Q. I BERNOUSSI - CASABLANCA </i>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="img">
-      <img class="img-fluid" src="./assets/MPER_IMAGE/contact/maps.png">
-    </div>
-  </div>
-

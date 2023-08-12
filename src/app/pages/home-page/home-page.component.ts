@@ -16,14 +16,12 @@ export class HomePageComponent implements OnInit {
 
     ngOnInit(): void {
         this.newsLetterForm = new FormGroup({
-            email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+            email: new FormControl('', [Validators.required, Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$")]),
         });
     }
 
     onSubmit() {
         if (this.newsLetterForm.valid) {
-            console.log('form is valid');
-            console.log('email is valid', this.newsLetterForm.value.email);
             this.firebaseService.addEmailToNewsletter(this.newsLetterForm.value.email).then(res => {
                 this.messageService.add({
                     severity: 'success',

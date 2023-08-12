@@ -89,6 +89,10 @@
     color: var(--var-cyan-color);
   }
 
+  .invalid-label {
+    color: red!important;
+  }
+
   .form-field {
     display: grid;
     width: 100%;
@@ -99,7 +103,24 @@
 
   }
 
+
+
   .form-field:focus {
+    outline: none;
+  }
+
+
+  .invalid-field {
+    display: grid;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 8px;
+
+  }
+
+  .invalid-field:focus {
     outline: none;
   }
 
@@ -110,7 +131,16 @@
     border-bottom-left-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
+  }
 
+  .disabled-btn{
+    opacity: 0.5;
+    background: var(--var-bg-grey-blue-color);
+    color: white;
+    border: none;
+    border-bottom-left-radius: 30px;
+    padding: 10px 20px;
+    cursor: wait;
   }
 
   .form-submit:hover {
@@ -125,7 +155,7 @@
     border-radius: 10px;
     padding: 20px;
     max-width:1140px;
-    background-color: none /*linear-gradient(to bottom, #15afe2, #184b80)*/;
+    background-color: transparent /*linear-gradient(to bottom, #15afe2, #184b80)*/;
 
 
   }

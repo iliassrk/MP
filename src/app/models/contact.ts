@@ -3,6 +3,6 @@ export interface Contact {
   lastName: string;
   phone: string;
   email: string;
-  object: string;
+  subject: string;
   message: string;
 }

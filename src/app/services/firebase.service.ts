@@ -14,7 +14,7 @@ export class FirebaseService {
   addContact(contact: Contact) {
     return new Promise<any>((resolve, reject) => {
       this.angularFirestore.collection('contacts').add(contact).then(res => {
-        console.log('response', res)
+        resolve(res);
       }, err => reject(err));
     });
   }
