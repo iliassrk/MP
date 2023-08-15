@@ -17,12 +17,38 @@
                 [routerLink]="'home'">Accueil</li>
             <li class="menu-item font-lato d-inline text-bold" [routerLinkActive]="'router-active'"
                 [routerLink]="'company'">Société</li>
-            <li class="menu-item font-lato text-bold"
-                [routerLinkActive]="'router-active'"
-                [routerLink]="'savoir-faire'">Savoir-Faire</li>
-            <li class="menu-item font-lato d-inline text-bold"
-                [routerLinkActive]="'router-active'"
-                [routerLink]="'secteurs-activites'">Secteurs d'activités</li>
+            <li class="menu-relative">
+              <span class="menu-item font-lato text-bold"
+                    [routerLinkActive]="'router-active'"
+                    [routerLink]="'savoir-faire'">
+              Savoir-Faire</span>
+              <ul class="submenu-item">
+                <li class="font-lato d-inline p-2"
+                    *ngFor="let secteur of savoirFaire"
+                    [routerLink]="secteur.routerLink"
+                    routerLinkActive="submenu-active"
+                    [title]="secteur.label"
+                >
+                  {{secteur.label}}
+                </li>
+              </ul>
+            </li>
+            <li class="menu-relative">
+               <span class="menu-item font-lato text-bold"
+                     [routerLinkActive]="'router-active'"
+                     [routerLink]="'secteurs-activites'">
+              Secteurs d'activités</span>
+              <ul class="submenu-item">
+                <li class="font-lato d-inline p-2"
+                    *ngFor="let secteur of secteursActivites"
+                    [routerLink]="secteur.routerLink"
+                    routerLinkActive="submenu-active"
+                    [title]="secteur.label"
+                >
+                  {{secteur.label}}
+                </li>
+              </ul>
+            </li>
             <li class="menu-item font-lato d-inline text-bold"
                 [routerLinkActive]="'router-active'"
                 [routerLink]="'parc-machine-page'">Parc-machines</li>
@@ -30,6 +56,7 @@
                 [routerLinkActive]="'router-active'"
                 [routerLink]="'contact-page'">Contact</li>
           </div>
+
         </div>
       </div>
     </div>
@@ -89,3 +116,4 @@
     </div>
   </div>
 </div>
+

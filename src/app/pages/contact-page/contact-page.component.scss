@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 700px;
+    width: 400px;
     z-index: -1;
     float: right;
     object-position: 226px 0px;
@@ -21,7 +21,7 @@
     position: absolute;
     top: 230px;
     left: 0;
-    width: 700px;
+    width: 400px;
     z-index: -1;
     float: right;
     object-position: -233px 0px;
@@ -158,6 +158,24 @@
     background-color: transparent /*linear-gradient(to bottom, #15afe2, #184b80)*/;
 
 
+  }
+
+  .tag-text-logo{
+    justify-content: center;
+    margin-top: 35px;
+
+    .mper-logo{
+      margin-right: 25px;
+    }
+    .text-img-1{
+      color: #0e2546;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    .text-img-2{
+      color: #005d9e;
+      font-weight: 500;
+    }
   }
 
 }
