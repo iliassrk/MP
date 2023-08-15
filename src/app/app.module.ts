@@ -42,6 +42,7 @@ import {MessageService} from "primeng/api";
 import {ToastModule} from "primeng/toast";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MenuModule} from "primeng/menu";
+import { AnimationHoverEffectDirective } from './shared-components/animation-hover-effect/animation-hover-effect.directive';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import {MenuModule} from "primeng/menu";
     OutillagePrototypageComponent,
     MontageAssemblageComponent,
     TournageComponent,
-    SavoirFaireComponent
+    SavoirFaireComponent,
+    AnimationHoverEffectDirective
   ],
   imports: [
     BrowserModule,

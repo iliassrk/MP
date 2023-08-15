@@ -24,7 +24,7 @@
       </div>
       <div *ngIf="selectedTabIndex == 0" class="row align-self-center mt-5">
         <div class="col-md-6 col-sm-12">
-          <img class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0001_Calque-17.png">
+          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0001_Calque-17.png">
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="description">
@@ -41,7 +41,7 @@
       </div>
       <div *ngIf="selectedTabIndex == 1" class="row align-self-center mt-5">
         <div class="col-md-6 col-sm-12">
-          <img class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
+          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="description">
@@ -63,7 +63,7 @@
                       [showThumbnails]="false"
                       [containerStyle]="{ 'max-width': '640px' }">
             <ng-template pTemplate="item" let-item>
-              <img [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
+              <img appAnimationHoverEffect [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
             </ng-template>
           </p-galleria>
         </div>
