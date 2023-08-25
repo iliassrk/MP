@@ -30,47 +30,54 @@
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="description">
-          <h5><b>MPER MAROC</b> est un nouveau projet spécialisé dans la fabrication mécanique avec des machines à
-            commandes numérique, ce projet est destiné à la sous-traitance rang 1 et 2 pour les secteurs
-            les plus stratégiques de l’industrie marocaine tel l'aéronautique, l'automobile, ferroviaire et médicale
-            ....</h5>
           <h5>
-            Afin d’accroître notre activité, nous souhaitons disposé des machines qui ont pour objet la fabrication des
-            pièces mécanique.
+          L’art du tournage est une technique d’usinage qui permet de travailler des matières brutes sous forme cylindrique par enlèvement de la matière.<br>
+          Dotée d’un parc machines récent et renouvelé régulièrement, l’équipe de techniciens polyvalents de MPERMAROC travaille sur des tours à
+          Commandes Numériques 2 axes, axe C et axe Y à forte valeur ajoutée.<br>
+          Ils sont ainsi en mesure de réaliser des pièces à forte exigence technique allant jusqu’à 550 mm de diamètre et 1 300 mm de longueur et
+          jusqu’aux 5 axes continus.<br>
           </h5>
         </div>
       </div>
     </div>
     <div *ngIf="selectedTabIndex == 1" class="row align-self-center mt-5">
       <div class="col-md-6 col-sm-12">
-        <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
+        <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/4.png">
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="description">
-          <h5><b>MPER MMAROC</b> est un nouveau projet spécialisé dans la fabrication mécanique avec des machines à
-            commandes numérique, ce projet est destiné à la sous-traitance rang 1 et 2 pour les secteurs
-            les plus stratégiques de l’industrie marocaine tel l'aéronautique, l'automobile, ferroviaire et médicale
-            ....</h5>
           <h5>
-            Afin d’accroître notre activité, nous souhaitons disposé des machines qui ont pour objet la fabrication des
-            pièces mécanique.
+            1 C.U 5 axes équipé robot Erowa<br>
+            1 C.U 5 axes DMG (DMU60 EVO)<br>
+            2 C.U 4 axes Hurco avec diviseur <br>
+            1 C.U 3 axes Hurco<br>
+            1 Fraiseuse Bridgeport<br>
+            2 Fraiseuse conventionnelle Kondia et Dufour <br>
           </h5>
         </div>
       </div>
     </div>
     <div *ngIf="selectedTabIndex == 2" class="row align-self-center mt-5">
       <div class="col-md-6 col-sm-12">
-        <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
+        <p-galleria [value]="images"
+                    [showIndicators]="true"
+                    [showThumbnails]="false"
+                    [containerStyle]="{ 'max-width': '640px' }">
+          <ng-template pTemplate="item" let-item>
+            <img appAnimationHoverEffect [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
+          </ng-template>
+        </p-galleria>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="description">
-          <h5><b>MPER MMMAROC</b> est un nouveau projet spécialisé dans la fabrication mécanique avec des machines à
-            commandes numérique, ce projet est destiné à la sous-traitance rang 1 et 2 pour les secteurs
-            les plus stratégiques de l’industrie marocaine tel l'aéronautique, l'automobile, ferroviaire et médicale
-            ....</h5>
           <h5>
-            Afin d’accroître notre activité, nous souhaitons disposé des machines qui ont pour objet la fabrication des
-            pièces mécanique.
+            Cage de rotules<br>
+            Tube support <br>
+            Cardan <br>
+            Levier <br>
+            Guignol équipé <br>
+            Palier <br>
+            Etc... <br>
           </h5>
         </div>
       </div>
