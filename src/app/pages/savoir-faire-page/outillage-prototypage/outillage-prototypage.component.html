@@ -12,46 +12,41 @@
 
     <div class="societe-section">
       <div class="row align-self-center">
-        <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(0)">
+        <div [ngClass]="selectedTabIndex == 0 ? 'presentation-card-active' : ''" class="col-md-6 col-sm-12 my-3 presentation-card" (click)="onChangeTab(0)">
           <h5 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold">Notre Expertise</h5>
         </div>
-        <div [ngClass]="selectedTabIndex == 1 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(1)">
+        <div [ngClass]="selectedTabIndex == 1 ? 'presentation-card-active' : ''" class="col-md-6 col-sm-12 my-3 presentation-card" (click)="onChangeTab(1)">
           <h5 class="font-lato text-bold">Notre parc Machine</h5>
         </div>
-        <div [ngClass]="selectedTabIndex == 2 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(2)">
+        <!--<div [ngClass]="selectedTabIndex == 2 ? 'presentation-card-active' : ''" class="col-md-4 col-sm-12 my-3 presentation-card" (click)="onChangeTab(2)">
           <h5 style="color: var(--var-dark-blue-text-color)" class="font-lato text-bold">Nos pièces</h5>
-        </div>
+        </div>-->
       </div>
       <div *ngIf="selectedTabIndex == 0" class="row align-self-center mt-5">
         <div class="col-md-6 col-sm-12">
-          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0001_Calque-17.png">
+          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/2.png">
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="description">
             <h5>
-              L'art du tournage est une technique d'usinage qui permet de travailler des matières brutes sous forme cylindrique
-              par enlèvement de la matière. <br>
-              Dotée d'un parc machines récent et renouvelé régulièrement, l'équipe des techniciens polyvalents de MPERMAROC travaille
-              sur des tours à Commandes Numériques 2 axes, axe C et axe Y à forte valeur ajoutée. <br>
-              Ils sont ainsi en mesure de réaliser des pièces à forte  exigence technique allant jusqu'à 500 mm de diamètre et 1 300 mm
-              de longueur et jusqu'aux 5 axes continus. <br>
+              Structurée autour du responsable méthodes, une équipe de techniciens est en charge de l‘industrialisation des produits. Elle est ainsi en mesure de gérer
+              la traduction du cahier des charges client en données techniques et de réaliser un dossier de fabrication avec si besoin la conception et la réalisation
+              d’outillages plus ou moins complexes pour la fabrication et ou le contrôle des pièces ou sous-ensembles.<br>
+              Ce service, en constante évolution afin de répondre aux besoins évolutifs du marché, propose notamment la gestion de kits, de l’approvisionnement à la livraison,
+              selon une nomenclature précisément définie. <br>
             </h5>
           </div>
         </div>
       </div>
       <div *ngIf="selectedTabIndex == 1" class="row align-self-center mt-5">
         <div class="col-md-6 col-sm-12">
-          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/_0002_Calque-16.png">
+          <img appAnimationHoverEffect class="img-fluid" src="./assets/MPER_IMAGE/savoir_faire/02_main/1.png">
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="description">
             <h5>
-              1 C.U 5 axes équipé robot Erowa<br>
-              1 C.U 5 axes DMG (DMU60 EVO)<br>
-              2 C.U 4 axes Hurco avec diviseur <br>
-              1 C.U 3 axes Hurco<br>
-              1 Fraiseuse Bridgeport<br>
-              2 Fraiseuse conventionnelle Kondia et Dufour <br>
+              L’ensemble de notre parc machine est utilisé pour ce savoir-faire<br><br>
+              Plus de détail dans fraisage, tournage, montage & assemblage et contrôle<br>
             </h5>
           </div>
         </div>
