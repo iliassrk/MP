@@ -8,10 +8,9 @@ import { Component } from '@angular/core';
 export class MontageAssemblageComponent {
   selectedTabIndex = 0;
   images: any[] = [
-    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/1.png', alt:'_0016_Calque-8-min'},
-    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/2.png', alt:'_0013_Calque-11-min'},
-    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/3.png', alt:'_0014_Calque-10-min'},
-    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/4.png', alt:'_0015_Calque-9-min'}
+    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/1.png', alt:'savoir_faire/montage_assemblage/1.png'},
+    {itemImageSrc:'../assets/MPER_IMAGE/savoir_faire/montage_assemblage/2.png', alt:'savoir_faire/montage_assemblage/2.png'},
+
 
   ];
 
