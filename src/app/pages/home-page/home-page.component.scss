@@ -40,7 +40,13 @@
         .pi {
           color: var(--var-white-text-color);
         }
+
       }
+      .navigation-btn:hover {
+        background: var(--var-bg-gradient-green-color);
+
+      }
+      
 
       .navigation-left-btn {
         position: absolute;
@@ -79,6 +85,15 @@
       padding: 20px 40px;
       top: 43%;
       width: 200px;
+
+    }
+    .read-more:hover {
+      background: var(--var-bg-gradient-green-color);;
+      color: var(--var-white-text-color);
+      padding: 20px 40px;
+      top: 43%;
+      width: 200px;
+
     }
 
     .discover-us {
