@@ -36,13 +36,14 @@
   <div class="activity-summary row">
     <div class="col-lg-9 col-md-12">
       <img class="activity-logo" src="./assets/images/logo%20+%20icon%20logo/logo%20svg%202.svg">
-      <h6 class="activity-summary-text">Vous avez un besoin précis dans un autre secteur d'activité ?
+      <h5 class="activity-summary-text">Vous avez un besoin précis dans un autre secteur d'activité ?
         <br>
-        Adressez-nous votre demande</h6>
+        Adressez-nous votre demande</h5>
     </div>
     <div class="col-lg-3 col-md-12" style="text-align: center;
     margin-top: 10px;">
-      <button class="btn read-more text-bold">
+      <button [routerLinkActive]="'router-active'"
+              [routerLink]="'/contact-page'" class="btn read-more text-bold">
         Envoyer une demande
       </button>
     </div>
