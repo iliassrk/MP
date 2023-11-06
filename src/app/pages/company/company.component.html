@@ -108,8 +108,16 @@
         </app-equipe-card>
       </div>
       <div class="col-lg-6 col-md-12">
+        <p-galleria [value]="images"
+                    [showIndicators]="true"
+                    [showThumbnails]="false"
+                    [containerStyle]="{ 'max-width': '447px' }">
+          <ng-template pTemplate="item" let-item>
+            <img appAnimationHoverEffect [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
+          </ng-template>
+        </p-galleria>
 
-        <img appAnimationHoverEffect  style="max-width: 447px;width: 100%" class="py-4"    src="../../../assets/MPER_IMAGE/societe/03_equipe/_0039_Calque-1.png">
+        <!--<img appAnimationHoverEffect  style="max-width: 447px;width: 100%" class="py-4"    src="../../../assets/MPER_IMAGE/societe/03_equipe/_0039_Calque-1.png">-->
       </div>
       <!-- --------------- sous la demande du client -------------
       <div class="col-lg-6 col-md-12">
