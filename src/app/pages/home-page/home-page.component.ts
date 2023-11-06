@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {FirebaseService} from "../../services/firebase.service";
 import {MessageService} from "primeng/api";
@@ -10,6 +10,9 @@ import {MessageService} from "primeng/api";
 })
 export class HomePageComponent implements OnInit {
     newsLetterForm!: FormGroup;
+
+
+
 
     constructor(private firebaseService: FirebaseService, private messageService: MessageService) {
     }

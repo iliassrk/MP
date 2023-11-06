@@ -67,7 +67,8 @@
       align-items: center;
       flex-wrap: nowrap;">
 
-            <button class="btn devis-btn text-bold">
+            <button [routerLinkActive]="'router-active'"
+                    [routerLink]="'contact-page'" class="btn devis-btn text-bold">
               DEMANDER UN DEVIS
             </button>
 
